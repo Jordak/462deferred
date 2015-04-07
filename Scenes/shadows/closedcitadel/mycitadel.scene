@@ -1,0 +1,15 @@
+model
+{
+	file "mycitadel.obj"
+}
+
+sunlight
+{
+	# one of these is probably correct, depending on Erik Sintorn's matrix order
+	direction -0.96 -0.6162 -1.3033
+	# direction -1.0197 -1.2695 -0.5903
+
+	# adjust these to create different daylight effects
+	color 1.0 1.0 1.0
+	ambient 0.2 0.2 0.2
+}

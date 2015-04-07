@@ -1,0 +1,47 @@
+model
+{
+	file "ep2_indoor.obj"
+}
+
+pointlight
+{
+	position  282.73 -9336.99  -1269.75 
+	ambient 0.3
+	color 0.95 0.95 1.0
+}
+
+pointlight
+{
+	position -196.555801 -9157.416992 -1255.329346 
+	ambient 0.0
+	color 1.0 1.0 0.187
+}
+
+pointlight
+{
+	position 538.522827 -10159.922852 -1281.964111 
+	ambient 0.0
+	color 0.45 0.50 0.8
+}
+
+pointlight
+{
+	position -42.360367 -10195.899414 -1332.033813 
+	ambient 0.0
+	color 0.45 0.50 0.8
+}
+
+pointlight
+{
+	position  662.709351 -9202.893555 -1249.855469 
+	ambient 0.0
+	color 0.55 0.60 0.8
+}
+
+
+pointlight
+{
+	position 470.580353 -9879.458984 -1466.183838 
+	ambient 0.0
+	color 0.9 0.05 0.05
+}

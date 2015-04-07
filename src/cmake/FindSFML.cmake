@@ -66,6 +66,9 @@ set(FIND_SFML_PATHS
     $ENV{SFML_ROOT}
     ~/Library/Frameworks
     /Library/Frameworks
+    /usr/local/Cellar/sfml/2.2
+    /usr/local/Cellar/sfml
+    /usr/local/Cellar
     /usr/local
     /usr
     /sw
@@ -313,6 +316,7 @@ if(SFML_STATIC_LIBRARIES)
 
         # update the list
         set(SFML_GRAPHICS_DEPENDENCIES ${FREETYPE_LIBRARY} ${GLEW_LIBRARY} ${JPEG_LIBRARY})
+        set(SFML_GRAPHICS_DEPENDENCIES ${FREETYPE_LIBRARY} ${JPEG_LIBRARY})
         set(SFML_DEPENDENCIES ${SFML_GRAPHICS_DEPENDENCIES} ${SFML_DEPENDENCIES})
     endif()
 

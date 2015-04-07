@@ -1,0 +1,13 @@
+model
+{
+	file "newvilla.obj"
+}
+
+sunlight
+{
+	color 1.0 1.0 1.0
+	ambient 0.0
+
+	# Change this to cast shadows through the gate
+	direction 0.5 -1.0 0.4
+}

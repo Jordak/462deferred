@@ -1,0 +1,14 @@
+# models\Ministrider\mini_skin_basecolor
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd hunter_material_0.tga
+opaque
+
+# models\Ministrider\mini_armor_basecolor
+newmtl material_1
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd hunter_material_1.tga
+opaque
+

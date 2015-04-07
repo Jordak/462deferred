@@ -1,0 +1,14 @@
+model
+{
+	file "sponza.obj"
+}
+
+# edit these parameters to adjust the directional light
+sunlight
+{
+	direction 0.1 -1.0 0.04
+	color 1.0 1.0 1.0
+	ambient 0.525
+}
+
+# add spot and point lights here
