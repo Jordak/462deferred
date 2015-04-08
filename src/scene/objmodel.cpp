@@ -314,3 +314,43 @@ bool ObjModel::loadFromFile( std::string path, std::string filename )
 
 	return true;
 }
+
+const ObjModel::TriangleGroup* ObjModel::get_groups() const
+{
+	return groups.empty() ? nullptr : &groups[0];
+}
+
+size_t ObjModel::num_groups() const
+{
+	return groups.size();
+}
+
+const glm::vec3* ObjModel::get_vertices() const
+{
+	return vertices.empty() ? nullptr : &vertices[0];
+}
+
+size_t ObjModel::num_vertices() const
+{
+	return vertices.size();
+}
+
+const glm::vec2* ObjModel::get_texcoords() const
+{
+	return texcoords.empty() ? nullptr : &texcoords[0];
+}
+
+size_t ObjModel::num_texcoords() const
+{
+	return texcoords.size();
+}
+
+const glm::vec3* ObjModel::get_normals() const
+{
+	return normals.empty() ? nullptr : &normals[0];
+}
+
+size_t ObjModel::num_normals() const
+{
+	return normals.size();
+}

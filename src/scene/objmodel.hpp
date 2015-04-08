@@ -64,6 +64,15 @@ public:
 
 	bool loadFromFile( std::string path, std::string filename );
 
+	const TriangleGroup* get_groups() const;
+	const glm::vec3* get_vertices() const;
+	const glm::vec2* get_texcoords() const;
+	const glm::vec3* get_normals() const;
+	size_t num_groups() const;
+	size_t num_vertices() const;
+	size_t num_texcoords() const;
+	size_t num_normals() const;
+
 private:
 	std::string name;
 	std::vector<glm::vec3> vertices;

@@ -24,7 +24,7 @@ int main( int argc, char ** argv )
 	
 	// you can change the requested OpenGL version support here
 	contextSettings.majorVersion = 3;
-	contextSettings.minorVersion = 0;
+	contextSettings.minorVersion = 3;
 
 	// create the window - you can change resolution, title, etc. here
 	sf::Window window(sf::VideoMode(1280, 720), "P4 Deferred Renderer", sf::Style::Default, contextSettings);

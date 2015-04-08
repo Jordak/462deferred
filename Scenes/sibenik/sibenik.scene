@@ -1,0 +1,15 @@
+model
+{
+	file "sibenik.obj"
+}
+
+# This will probably look bad, and should be changed.
+# Sibenik is an indoor cathedral scene - ideally, the light should come through the windows.
+sunlight
+{
+	direction: 0.2 -1.0 0.3
+	color: 0.7 0.7 0.7
+	ambient: 0.4
+}
+
+# Alternatively, make it night and put lots of flickering torches!

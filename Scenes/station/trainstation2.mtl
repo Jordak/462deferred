@@ -1,0 +1,4499 @@
+# PLASTER/PLASTERWALL034A
+newmtl material_0
+opaque
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_0.tga
+
+# BUILDING_TEMPLATE/COURTYARD_TEMPLATE001B
+newmtl material_1
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_1.tga
+
+# METAL/METALHULL003A
+newmtl material_2
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_2.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE028A
+newmtl material_3
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_3.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_TEMPLATE002K
+newmtl material_4
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_4.tga
+
+# PLASTER/PLASTERWALL003A
+newmtl material_5
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_5.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE011M
+newmtl material_6
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_6.tga
+
+# CONCRETE/CONCRETEFLOOR026A
+newmtl material_7
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_7.tga
+
+# CONCRETE/CONCRETESTAIR005A
+newmtl material_8
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_8.tga
+
+# CONCRETE/CONCRETEFLOOR013A
+newmtl material_9
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_9.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-5519_-3508_132
+newmtl material_10
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_10.tga
+
+# NATURE/RED_GRASS
+newmtl material_11
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_11.tga
+
+# STONE/STONEWALL050C
+newmtl material_12
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_12.tga
+
+# STONE/STONEWALL050A
+newmtl material_13
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_13.tga
+
+# STONE/STONEWALL050B
+newmtl material_14
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_14.tga
+
+# PROPS/SIGN_FOTO01A
+newmtl material_15
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_15.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE014F
+newmtl material_16
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_16.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-3063_-846_449
+newmtl material_17
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_17.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE012J
+newmtl material_18
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_18.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-3063_-842_196
+newmtl material_19
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_19.tga
+
+# METAL/METALSTAIR003A
+newmtl material_20
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_20.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE003C
+newmtl material_21
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_21.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-4060_-504_-31
+newmtl material_22
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_22.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE011F
+newmtl material_23
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_23.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE021A
+newmtl material_24
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_24.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-1336_-3464_339
+newmtl material_25
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_25.tga
+
+# STONE/STONEWALL040F
+newmtl material_26
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_26.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-1472_-3472_576
+newmtl material_27
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_27.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-1336_-3464_339
+newmtl material_28
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_28.tga
+
+# METAL/METALTRACK001A
+newmtl material_29
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_29.tga
+
+# METAL/METALGATE001A
+newmtl material_30
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_30.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2443_-761_124
+newmtl material_31
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_31.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE011B
+newmtl material_32
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_32.tga
+
+# BUILDING_TEMPLATE/COURTYARD_TEMPLATE003B
+newmtl material_33
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_33.tga
+
+# PROPS/SIGNBILLBOARD002A
+newmtl material_34
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_34.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-3047_-3872_327
+newmtl material_35
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_35.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE002H
+newmtl material_36
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_36.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-3047_-3872_327
+newmtl material_37
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_37.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-3047_-4182_348
+newmtl material_38
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_38.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-3047_-4182_348
+newmtl material_39
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_39.tga
+
+# METAL/METALTRUSS003A
+newmtl material_40
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_40.tga
+
+# maps/d1_trainstation_02/building_template/building_template012d_-2111_-2887_374
+newmtl material_41
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_41.tga
+
+# METAL/METALTRUSS022C
+newmtl material_42
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_42.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-2056_-744_240
+newmtl material_43
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_43.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE014I
+newmtl material_44
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_44.tga
+
+# maps/d1_trainstation_02/building_template/building_template012d_-2768_-3280_436
+newmtl material_45
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_45.tga
+
+# CONCRETE/CONCRETEWALL016C
+newmtl material_46
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_46.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-4582_-5868_78
+newmtl material_47
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_47.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-3687_-5022_25
+newmtl material_48
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_48.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001c_-2880_-3424_339
+newmtl material_49
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_49.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-1562_-2713_73
+newmtl material_50
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_50.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001c_-1562_-2713_73
+newmtl material_51
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_51.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-1548_-2700_254
+newmtl material_52
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_52.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-3482_-4441_458
+newmtl material_53
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_53.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-1609_-121_369
+newmtl material_54
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_54.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-1609_-121_369
+newmtl material_55
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_55.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-3525_-4575_530
+newmtl material_56
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_56.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE011H
+newmtl material_57
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_57.tga
+
+# PROPS/RUBBERROOF002A
+newmtl material_58
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_58.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE002A
+newmtl material_59
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_59.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE011I
+newmtl material_60
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_60.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-1056_-1432_346
+newmtl material_61
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_61.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-1056_-1432_346
+newmtl material_62
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_62.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE002K
+newmtl material_63
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_63.tga
+
+# maps/d1_trainstation_02/wood/woodwall023a_-1382_-2386_73
+newmtl material_64
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_64.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-3896_-5927_329
+newmtl material_65
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_65.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-3896_-5927_329
+newmtl material_66
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_66.tga
+
+# METAL/METALVENT001A
+newmtl material_67
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_67.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-1980_-376_256
+newmtl material_68
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_68.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-1737_-585_376
+newmtl material_69
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_69.tga
+
+# maps/d1_trainstation_02/wood/woodwall023a_-793_-2017_73
+newmtl material_70
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_70.tga
+
+# maps/d1_trainstation_02/wood/woodwall023a_-954_-2008_125
+newmtl material_71
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_71.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-793_-2017_73
+newmtl material_72
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_72.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-763_-2135_440
+newmtl material_73
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_73.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-763_-2135_440
+newmtl material_74
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_74.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_TEMPLATE002J
+newmtl material_75
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_75.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_WINDOW001B
+newmtl material_76
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_76.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-2876_-825_313
+newmtl material_77
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_77.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2876_-825_313
+newmtl material_78
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_78.tga
+
+# PROPS/PAPERPOSTER003B
+newmtl material_79
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_79.tga
+
+# PROPS/PAPERPOSTER002B
+newmtl material_80
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_80.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-2621_-713_279
+newmtl material_81
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_81.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-2621_-713_279
+newmtl material_82
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_82.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-3063_-846_449
+newmtl material_83
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_83.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-3063_-846_449
+newmtl material_84
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_84.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-2876_-825_313
+newmtl material_85
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_85.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2432_-809_240
+newmtl material_86
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_86.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2621_-713_279
+newmtl material_87
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_87.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3063_-2704_450
+newmtl material_88
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_88.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3063_-1388_448
+newmtl material_89
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_89.tga
+
+# maps/d1_trainstation_02/wood/woodwall023a_-1562_-2713_73
+newmtl material_90
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_90.tga
+
+# maps/d1_trainstation_02/stone/stonestair001a_-3063_-1387_200
+newmtl material_91
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_91.tga
+
+# BRICK/BRICKWALL017A
+newmtl material_92
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_92.tga
+
+# maps/d1_trainstation_02/wood/wooddoor048a_-5216_-4666_61
+newmtl material_93
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_93.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-3525_-4575_530
+newmtl material_94
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_94.tga
+
+# STOREFRONT_TEMPLATE/STOREFRONT_TEMPLATE001G
+newmtl material_95
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_95.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2690_-4815_148
+newmtl material_96
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_96.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2697_-4807_255
+newmtl material_97
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_97.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-2694_-4810_534
+newmtl material_98
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_98.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2907_-4559_135
+newmtl material_99
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_99.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2907_-4559_263
+newmtl material_100
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_100.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-2909_-4559_527
+newmtl material_101
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_101.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2525_-5014_145
+newmtl material_102
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_102.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2530_-5008_264
+newmtl material_103
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_103.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-2523_-5015_514
+newmtl material_104
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_104.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-3643_-5927_326
+newmtl material_105
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_105.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-3643_-5927_326
+newmtl material_106
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_106.tga
+
+# CONCRETE/CONCRETEWALL013F
+newmtl material_107
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_107.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-1737_-585_376
+newmtl material_108
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_108.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-1859_-569_130
+newmtl material_109
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_109.tga
+
+# PROPS/SIGN_TRAINSCHEDULE01A
+newmtl material_110
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_110.tga
+
+# maps/d1_trainstation_02/wood/wooddoor048a_-5238_-4151_323
+newmtl material_111
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_111.tga
+
+# BUILDING_TEMPLATE/COURTYARD_TEMPLATE002B
+newmtl material_112
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_112.tga
+
+# METAL/METALRAIL001A
+newmtl material_113
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_113.tga
+
+# DEV/DEV_LOWERMETALDOOR02A
+newmtl material_114
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_114.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3104_-2048_532
+newmtl material_115
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_115.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_window001a_-3968_-2048_128
+newmtl material_116
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_116.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_window001a_-3830_-1717_73
+newmtl material_117
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_117.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-5447_-3832_298
+newmtl material_118
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_118.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-5447_-3832_298
+newmtl material_119
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_119.tga
+
+# maps/d1_trainstation_02/wood/wooddoor048a_-5242_-4217_57
+newmtl material_120
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_120.tga
+
+# maps/d1_trainstation_02/wood/wooddoor048a_-5328_-4544_61
+newmtl material_121
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_121.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002c_-3609_-4066_346
+newmtl material_122
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_122.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002c_-4802_-3818_9
+newmtl material_123
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_123.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-5195_-4151_453
+newmtl material_124
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_124.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-5431_-3680_113
+newmtl material_125
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_125.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-1862_-409_72
+newmtl material_126
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_126.tga
+
+# maps/d1_trainstation_02/stone/stonestair001a_-3063_-2693_204
+newmtl material_127
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_127.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-1012_-1782_69
+newmtl material_128
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_128.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-954_-2008_125
+newmtl material_129
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_129.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-2218_-4962_69
+newmtl material_130
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_130.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-1859_-569_130
+newmtl material_131
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_131.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2621_-713_279
+newmtl material_132
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_132.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template003c_-3703_-3625_225
+newmtl material_133
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_133.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template003c_-4071_-3625_266
+newmtl material_134
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_134.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-1279_-2211_434
+newmtl material_135
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_135.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-1279_-2211_434
+newmtl material_136
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_136.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-1344_-2176_73
+newmtl material_137
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_137.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-1382_-2386_73
+newmtl material_138
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_138.tga
+
+# maps/d1_trainstation_02/wood/woodwall023a_-1344_-2176_73
+newmtl material_139
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_139.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-1623_-821_384
+newmtl material_140
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_140.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-5431_-3680_113
+newmtl material_141
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_141.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-5519_-3453_316
+newmtl material_142
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_142.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-5431_-3955_108
+newmtl material_143
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_143.tga
+
+# METAL/METALRAIL013C
+newmtl material_144
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_144.tga
+
+# METAL/METALGRATE013B
+newmtl material_145
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_145.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-5195_-4151_453
+newmtl material_146
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_146.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-5519_-3453_316
+newmtl material_147
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_147.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-5519_-3453_316
+newmtl material_148
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_148.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-5238_-4151_323
+newmtl material_149
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_149.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-5235_-3828_9
+newmtl material_150
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_150.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-4164_-5927_315
+newmtl material_151
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_151.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-4164_-5927_315
+newmtl material_152
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_152.tga
+
+# maps/d1_trainstation_02/building_template/building_template012d_-3896_-6007_608
+newmtl material_153
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_153.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-763_-2135_440
+newmtl material_154
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_154.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-2327_-5112_261
+newmtl material_155
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_155.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-640_-1512_346
+newmtl material_156
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_156.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-640_-1512_346
+newmtl material_157
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_157.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2621_-713_279
+newmtl material_158
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_158.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2768_-3280_436
+newmtl material_159
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_159.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3031_-1119_356
+newmtl material_160
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_160.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3047_-2976_356
+newmtl material_161
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_161.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3489_-1668_119
+newmtl material_162
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_162.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2876_-825_313
+newmtl material_163
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_163.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4276_16_9
+newmtl material_164
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_164.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2432_-809_240
+newmtl material_165
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_165.tga
+
+# BUILDING_TEMPLATE/ROOF_TEMPLATE001B
+newmtl material_166
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_166.tga
+
+# BUILDING_TEMPLATE/BUILDING_TEMPLATE002E
+newmtl material_167
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_167.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-2432_-809_240
+newmtl material_168
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_168.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-3063_-846_449
+newmtl material_169
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_169.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2240_-824_317
+newmtl material_170
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_170.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2195_-745_115
+newmtl material_171
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_171.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2056_-744_240
+newmtl material_172
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_172.tga
+
+# PROPS/METALSIGN001A
+newmtl material_173
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_173.tga
+
+# PLASTER/PLASTERWALL048B
+newmtl material_174
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_174.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-1279_-2211_434
+newmtl material_175
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_175.tga
+
+# PROPS/SIGN_CAFE01A
+newmtl material_176
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_176.tga
+
+# PROPS/SIGN_HOTEL01A
+newmtl material_177
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_177.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-3063_-2704_450
+newmtl material_178
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_178.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-2909_-4559_527
+newmtl material_179
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_179.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-1664_-840_73
+newmtl material_180
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_180.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-1623_-821_384
+newmtl material_181
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_181.tga
+
+# maps/d1_trainstation_02/stone/stonestair001a_-3079_-2970_140
+newmtl material_182
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_182.tga
+
+# maps/d1_trainstation_02/stone/stonestair001a_-3079_-1115_128
+newmtl material_183
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_183.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2111_-2887_374
+newmtl material_184
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_184.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4336_-4087_328
+newmtl material_185
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_185.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3593_-3893_333
+newmtl material_186
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_186.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2656_-2976_404
+newmtl material_187
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_187.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3031_-1119_356
+newmtl material_188
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_188.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3047_-2976_356
+newmtl material_189
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_189.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-3063_-3705_330
+newmtl material_190
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_190.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-3063_-3705_330
+newmtl material_191
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_191.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-3063_-4031_312
+newmtl material_192
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_192.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-3063_-4031_312
+newmtl material_193
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_193.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-3063_-4317_336
+newmtl material_194
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_194.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-3063_-4317_336
+newmtl material_195
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_195.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-1485_-1236_73
+newmtl material_196
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_196.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-1376_-1208_329
+newmtl material_197
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_197.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-1376_-1208_329
+newmtl material_198
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_198.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-1664_-840_73
+newmtl material_199
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_199.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-1228_-1534_73
+newmtl material_200
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_200.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-763_-2135_440
+newmtl material_201
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_201.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-793_-2017_73
+newmtl material_202
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_202.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-3133_-4599_526
+newmtl material_203
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_203.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-3063_-4317_336
+newmtl material_204
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_204.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-3063_-4317_336
+newmtl material_205
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_205.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2825_-4315_53
+newmtl material_206
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_206.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2526_-5012_389
+newmtl material_207
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_207.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-2318_-5114_531
+newmtl material_208
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_208.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2327_-5112_261
+newmtl material_209
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_209.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2318_-5114_531
+newmtl material_210
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_210.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-2218_-4962_69
+newmtl material_211
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_211.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2218_-4962_69
+newmtl material_212
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_212.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-1472_-3472_576
+newmtl material_213
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_213.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-1472_-3472_576
+newmtl material_214
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_214.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2515_-4610_53
+newmtl material_215
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_215.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2909_-4559_527
+newmtl material_216
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_216.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3063_-3249_457
+newmtl material_217
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_217.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2239_-4645_465
+newmtl material_218
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_218.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2656_-4227_247
+newmtl material_219
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_219.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2653_-4231_472
+newmtl material_220
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_220.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2658_-4226_150
+newmtl material_221
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_221.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template001d_-3609_-4066_346
+newmtl material_222
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_222.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template001d_-3898_-4151_324
+newmtl material_223
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_223.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template001d_-3593_-3893_333
+newmtl material_224
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_224.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template003c_-4304_-3547_261
+newmtl material_225
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_225.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-5056_-5568_64
+newmtl material_226
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_226.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4164_-5927_315
+newmtl material_227
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_227.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4584_-5866_371
+newmtl material_228
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_228.tga
+
+# maps/d1_trainstation_02/building_template/building_template002c_-4582_-5868_78
+newmtl material_229
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_229.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-4584_-5866_371
+newmtl material_230
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_230.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-3593_-5051_530
+newmtl material_231
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_231.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-3687_-5022_25
+newmtl material_232
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_232.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-3643_-5927_326
+newmtl material_233
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_233.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-3643_-5927_326
+newmtl material_234
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_234.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-2525_-5014_145
+newmtl material_235
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_235.tga
+
+# maps/d1_trainstation_02/building_template/building_template021f_-2326_-5112_394
+newmtl material_236
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_236.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001c_-2875_-3702_53
+newmtl material_237
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_237.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001c_-2648_-2977_62
+newmtl material_238
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_238.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001c_-2877_-3189_69
+newmtl material_239
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_239.tga
+
+# maps/d1_trainstation_02/wood/wooddoor048a_-4802_-3818_9
+newmtl material_240
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_240.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-5447_-3832_298
+newmtl material_241
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_241.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4464_-3824_9
+newmtl material_242
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_242.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3609_-4066_346
+newmtl material_243
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_243.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4681_-4278_317
+newmtl material_244
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_244.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-5195_-4151_453
+newmtl material_245
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_245.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-5096_-4584_313
+newmtl material_246
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_246.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-5256_-4480_265
+newmtl material_247
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_247.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3593_-5051_530
+newmtl material_248
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_248.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3898_-4151_324
+newmtl material_249
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_249.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3525_-4575_530
+newmtl material_250
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_250.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3133_-4599_526
+newmtl material_251
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_251.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3900_-3625_378
+newmtl material_252
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_252.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3482_-4441_458
+newmtl material_253
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_253.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2909_-4559_527
+newmtl material_254
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_254.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2880_-3424_339
+newmtl material_255
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_255.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3229_-4441_444
+newmtl material_256
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_256.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3968_-2048_128
+newmtl material_257
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_257.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4304_-3547_261
+newmtl material_258
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_258.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4071_-3625_266
+newmtl material_259
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_259.tga
+
+# maps/d1_trainstation_02/stone/stonestair001a_-2763_-2028_73
+newmtl material_260
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_260.tga
+
+# maps/d1_trainstation_02/stone/stonestair001a_-3045_-2098_105
+newmtl material_261
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_261.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template003c_-3898_-3625_267
+newmtl material_262
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_262.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template003c_-3900_-3625_378
+newmtl material_263
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_263.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002c_-4464_-3824_9
+newmtl material_264
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_264.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-1980_-376_256
+newmtl material_265
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_265.tga
+
+# METAL/METALWALL030A
+newmtl material_266
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_266.tga
+
+# EFFECTS/FOG_D1_TRAINSTATION_02
+newmtl material_267
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_267.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-4276_16_9
+newmtl material_268
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_268.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1609_-121_369
+newmtl material_269
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_269.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033a_-1609_-121_369
+newmtl material_270
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_270.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006e_-1609_-121_369
+newmtl material_271
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_271.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006d_-1609_-121_369
+newmtl material_272
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_272.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006d_-4276_16_9
+newmtl material_273
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_273.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006e_-4276_16_9
+newmtl material_274
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_274.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033a_-4276_16_9
+newmtl material_275
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_275.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-4276_16_9
+newmtl material_276
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_276.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_TEMPLATE002O
+newmtl material_277
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_277.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-3047_-3538_195
+newmtl material_278
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_278.tga
+
+# maps/d1_trainstation_02/building_template/building_template002o_-3063_-3249_457
+newmtl material_279
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_279.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-2693_204
+newmtl material_280
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_280.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-1388_448
+newmtl material_281
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_281.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-846_449
+newmtl material_282
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_282.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-3063_-3249_457
+newmtl material_283
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_283.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-2704_450
+newmtl material_284
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_284.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-842_196
+newmtl material_285
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_285.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-3249_457
+newmtl material_286
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_286.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-3241_213
+newmtl material_287
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_287.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3063_-1387_200
+newmtl material_288
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_288.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1862_-409_72
+newmtl material_289
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_289.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-1862_-409_72
+newmtl material_290
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_290.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-1931_-1058_69
+newmtl material_291
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_291.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-1699_-1006_73
+newmtl material_292
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_292.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1699_-1006_73
+newmtl material_293
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_293.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2042_-833_73
+newmtl material_294
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_294.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1664_-840_73
+newmtl material_295
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_295.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1485_-1236_73
+newmtl material_296
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_296.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1862_-409_72
+newmtl material_297
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_297.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028d_-2042_-833_73
+newmtl material_298
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_298.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028d_-1485_-1236_73
+newmtl material_299
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_299.tga
+
+# DEV/REFLECTIVITY_90B
+newmtl material_300
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_300.tga
+
+# PROPS/COMBINE_DISPLAY01B
+newmtl material_301
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_301.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1931_-1058_69
+newmtl material_302
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_302.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1859_-569_130
+newmtl material_303
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_303.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-2625_-651_64
+newmtl material_304
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_304.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2195_-745_115
+newmtl material_305
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_305.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2790_-988_73
+newmtl material_306
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_306.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2763_-2028_73
+newmtl material_307
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_307.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2443_-761_124
+newmtl material_308
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_308.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-2790_-988_73
+newmtl material_309
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_309.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2625_-651_64
+newmtl material_310
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_310.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2042_-833_73
+newmtl material_311
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_311.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2443_-761_124
+newmtl material_312
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_312.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2790_-988_73
+newmtl material_313
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_313.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2514_-1961_69
+newmtl material_314
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_314.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2514_-1961_69
+newmtl material_315
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_315.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1375_-1802_50
+newmtl material_316
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_316.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-1375_-1802_50
+newmtl material_317
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_317.tga
+
+# maps/d1_trainstation_02/metal/metalcombine001_-793_-2017_73
+newmtl material_318
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_318.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-640_-1512_346
+newmtl material_319
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_319.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1012_-1782_69
+newmtl material_320
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_320.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-954_-2008_125
+newmtl material_321
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_321.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1382_-2386_73
+newmtl material_322
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_322.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-1382_-2386_73
+newmtl material_323
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_323.tga
+
+# PROPS/COMBINE_DISPLAY01A
+newmtl material_324
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_324.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-793_-2017_73
+newmtl material_325
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_325.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1696_-1350_69
+newmtl material_326
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_326.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-1696_-1350_69
+newmtl material_327
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_327.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2008_-1330_73
+newmtl material_328
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_328.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2008_-1330_73
+newmtl material_329
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_329.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1630_-2170_69
+newmtl material_330
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_330.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-1630_-2170_69
+newmtl material_331
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_331.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1485_-1236_73
+newmtl material_332
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_332.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028d_-1382_-2386_73
+newmtl material_333
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_333.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028d_-1880_-1792_265
+newmtl material_334
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_334.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1880_-1792_265
+newmtl material_335
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_335.tga
+
+# METAL/METALFENCE001A
+newmtl material_336
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_336.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1696_-1350_69
+newmtl material_337
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_337.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1375_-1802_50
+newmtl material_338
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_338.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1630_-2170_69
+newmtl material_339
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_339.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-3045_-2098_105
+newmtl material_340
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_340.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3045_-2098_105
+newmtl material_341
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_341.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_TEMPLATE001C
+newmtl material_342
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_342.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033y_-2008_-1330_73
+newmtl material_343
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_343.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2514_-1961_69
+newmtl material_344
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_344.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033y_-2514_-1961_69
+newmtl material_345
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_345.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-1548_-2700_254
+newmtl material_346
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_346.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2392_-2746_73
+newmtl material_347
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_347.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2070_-2800_73
+newmtl material_348
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_348.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2087_-2903_73
+newmtl material_349
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_349.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-1562_-2713_73
+newmtl material_350
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_350.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-2087_-2903_73
+newmtl material_351
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_351.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-1562_-2713_73
+newmtl material_352
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_352.tga
+
+# WOOD/WOODWALL014A
+newmtl material_353
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_353.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2111_-2887_374
+newmtl material_354
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_354.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-1382_-2386_73
+newmtl material_355
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_355.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2070_-2800_73
+newmtl material_356
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_356.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-1336_-3464_339
+newmtl material_357
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_357.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-2111_-2887_374
+newmtl material_358
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_358.tga
+
+# PROPS/METALSIGN001I
+newmtl material_359
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_359.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-2087_-2903_73
+newmtl material_360
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_360.tga
+
+# PROPS/SIGNBILLBOARD001A
+newmtl material_361
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_361.tga
+
+# maps/d1_trainstation_02/building_template/building_template012h_-2111_-2887_374
+newmtl material_362
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_362.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-2111_-2887_374
+newmtl material_363
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_363.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2170_-2494_69
+newmtl material_364
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_364.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-1562_-2713_73
+newmtl material_365
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_365.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-1562_-2713_73
+newmtl material_366
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_366.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2170_-2494_69
+newmtl material_367
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_367.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2170_-2494_69
+newmtl material_368
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_368.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2070_-2800_73
+newmtl material_369
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_369.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-3079_-2970_140
+newmtl material_370
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_370.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028d_-2392_-2746_73
+newmtl material_371
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_371.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2648_-2977_62
+newmtl material_372
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_372.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2392_-2746_73
+newmtl material_373
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_373.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2087_-2903_73
+newmtl material_374
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_374.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-2656_-2976_404
+newmtl material_375
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_375.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2656_-2976_404
+newmtl material_376
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_376.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-2111_-2887_374
+newmtl material_377
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_377.tga
+
+# maps/d1_trainstation_02/building_template/building_template012h_-2656_-2976_404
+newmtl material_378
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_378.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2111_-2887_374
+newmtl material_379
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_379.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-2656_-2976_404
+newmtl material_380
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_380.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-2392_-2746_73
+newmtl material_381
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_381.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001c_-2087_-2903_73
+newmtl material_382
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_382.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-2392_-2746_73
+newmtl material_383
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_383.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-2648_-2977_62
+newmtl material_384
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_384.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2667_-2791_69
+newmtl material_385
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_385.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2392_-2746_73
+newmtl material_386
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_386.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2667_-2791_69
+newmtl material_387
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_387.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2667_-2791_69
+newmtl material_388
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_388.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2697_-4075_468
+newmtl material_389
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_389.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2784_-3776_395
+newmtl material_390
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_390.tga
+
+# maps/d1_trainstation_02/building_template/building_template012h_-2768_-3280_436
+newmtl material_391
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_391.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-2768_-3280_436
+newmtl material_392
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_392.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2784_-3776_395
+newmtl material_393
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_393.tga
+
+# maps/d1_trainstation_02/building_template/building_template012c_-2784_-3776_395
+newmtl material_394
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_394.tga
+
+# maps/d1_trainstation_02/building_template/building_template012h_-2784_-3776_395
+newmtl material_395
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_395.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-2784_-3776_395
+newmtl material_396
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_396.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2880_-3424_339
+newmtl material_397
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_397.tga
+
+# maps/d1_trainstation_02/building_template/building_template002b_-2880_-3424_339
+newmtl material_398
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_398.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-2768_-3280_436
+newmtl material_399
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_399.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-2768_-3280_436
+newmtl material_400
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_400.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-2784_-3776_395
+newmtl material_401
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_401.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2697_-4082_249
+newmtl material_402
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_402.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2697_-4072_138
+newmtl material_403
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_403.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2875_-3702_53
+newmtl material_404
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_404.tga
+
+# CONCRETE/CONCRETEFLOOR015A
+newmtl material_405
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_405.tga
+
+# maps/d1_trainstation_02/tile/tilefloor018a_-2875_-3702_53
+newmtl material_406
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_406.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-2877_-3189_69
+newmtl material_407
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_407.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-2875_-3702_53
+newmtl material_408
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_408.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2875_-3702_53
+newmtl material_409
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_409.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2875_-3702_53
+newmtl material_410
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_410.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2210_-4673_253
+newmtl material_411
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_411.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-2205_-4679_152
+newmtl material_412
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_412.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2515_-4610_53
+newmtl material_413
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_413.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2515_-4610_53
+newmtl material_414
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_414.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2515_-4610_53
+newmtl material_415
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_415.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033a_-2218_-4962_69
+newmtl material_416
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_416.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2218_-4962_69
+newmtl material_417
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_417.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2672_-4224_29
+newmtl material_418
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_418.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2218_-4962_69
+newmtl material_419
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_419.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2784_-3776_395
+newmtl material_420
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_420.tga
+
+# maps/d1_trainstation_02/building_template/building_template011c_-2693_-4811_386
+newmtl material_421
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_421.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2672_-4224_29
+newmtl material_422
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_422.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2672_-4224_29
+newmtl material_423
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_423.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-2825_-4315_53
+newmtl material_424
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_424.tga
+
+# PROPS/COMBINE_DISPLAY01C
+newmtl material_425
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_425.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2690_-4815_148
+newmtl material_426
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_426.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028d_-2672_-4224_29
+newmtl material_427
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_427.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2825_-4315_53
+newmtl material_428
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_428.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2690_-4815_148
+newmtl material_429
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_429.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-2525_-5014_145
+newmtl material_430
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_430.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-2327_-5112_261
+newmtl material_431
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_431.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033c_-3687_-5022_25
+newmtl material_432
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_432.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033k_-3896_-5927_329
+newmtl material_433
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_433.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033c_-3896_-5927_329
+newmtl material_434
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_434.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033c_-2327_-5112_261
+newmtl material_435
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_435.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033k_-2327_-5112_261
+newmtl material_436
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_436.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-3687_-5022_25
+newmtl material_437
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_437.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-3643_-5927_326
+newmtl material_438
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_438.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-3896_-6007_608
+newmtl material_439
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_439.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-4164_-5927_315
+newmtl material_440
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_440.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall024b_-4060_-504_-31
+newmtl material_441
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_441.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002f_-3031_-1119_356
+newmtl material_442
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_442.tga
+
+# PLASTER/PLASTERCEILING008A
+newmtl material_443
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_443.tga
+
+# maps/d1_trainstation_02/tile/tilefloor013a_-3996_-810_137
+newmtl material_444
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_444.tga
+
+# maps/d1_trainstation_02/tile/tilefloor013a_-3806_-2078_129
+newmtl material_445
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_445.tga
+
+# CONCRETE/CONCRETECEILING001A
+newmtl material_446
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_446.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3079_-1115_128
+newmtl material_447
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_447.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall024b_-3904_-288_-31
+newmtl material_448
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_448.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall024b_-4080_-288_-31
+newmtl material_449
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_449.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor039a_-4080_-288_-31
+newmtl material_450
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_450.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor039a_-4060_-504_-31
+newmtl material_451
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_451.tga
+
+# CONCRETE/CONCRETEWALL037D
+newmtl material_452
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_452.tga
+
+# CONCRETE/CONCRETEWALL004B
+newmtl material_453
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_453.tga
+
+# CONCRETE/CONCRETEWALL004C
+newmtl material_454
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_454.tga
+
+# CONCRETE/CONCRETEWALL004A
+newmtl material_455
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_455.tga
+
+# CONCRETE/CONCRETEWALL071B
+newmtl material_456
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_456.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-4253_-260_-31
+newmtl material_457
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_457.tga
+
+# WOOD/WOODFLOOR005A
+newmtl material_458
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_458.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor039a_-4276_16_9
+newmtl material_459
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_459.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor039a_-3996_-810_137
+newmtl material_460
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_460.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall024b_-4253_-260_-31
+newmtl material_461
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_461.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor039a_-4304_-3547_261
+newmtl material_462
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_462.tga
+
+# CONCRETE/CONCRETEWALL071C
+newmtl material_463
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_463.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor039a_-4253_-260_-31
+newmtl material_464
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_464.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall024b_-4304_-3547_261
+newmtl material_465
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_465.tga
+
+# WOOD/WOODWALL006A
+newmtl material_466
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_466.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_WINDOW002E
+newmtl material_467
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_467.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_window002c_-3104_-2048_532
+newmtl material_468
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_468.tga
+
+# maps/d1_trainstation_02/stone/stonestair001a_-3382_-2073_73
+newmtl material_469
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_469.tga
+
+# maps/d1_trainstation_02/tile/tilefloor013a_-3333_-2445_73
+newmtl material_470
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_470.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002f_-3047_-2976_356
+newmtl material_471
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_471.tga
+
+# maps/d1_trainstation_02/building_template/building_trainstation_template002b_-3079_-2970_140
+newmtl material_472
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_472.tga
+
+# PROPS/PLASTICPOPMACHINE001A
+newmtl material_473
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_473.tga
+
+# WOOD/WOODWALL012A
+newmtl material_474
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_474.tga
+
+# BUILDING_TEMPLATE/COURTYARD_TEMPLATE002K
+newmtl material_475
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_475.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002e_-4336_-4087_328
+newmtl material_476
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_476.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-2784_-3776_395
+newmtl material_477
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_477.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-3898_-3625_267
+newmtl material_478
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_478.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-3672_-4034_25
+newmtl material_479
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_479.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-3672_-4514_25
+newmtl material_480
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_480.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-3672_-4034_25
+newmtl material_481
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_481.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-3975_-3818_25
+newmtl material_482
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_482.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-3975_-3818_25
+newmtl material_483
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_483.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template001c_-3593_-3893_333
+newmtl material_484
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_484.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-3687_-5022_25
+newmtl material_485
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_485.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006a_-3687_-5022_25
+newmtl material_486
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_486.tga
+
+# maps/d1_trainstation_02/building_template/building_template011g_-3593_-5051_530
+newmtl material_487
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_487.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002c_-3898_-4151_324
+newmtl material_488
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_488.tga
+
+# maps/d1_trainstation_02/metal/metalroof006a_-3593_-4799_525
+newmtl material_489
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_489.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002j_-4336_-4087_328
+newmtl material_490
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_490.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-4802_-3818_9
+newmtl material_491
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_491.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-4802_-3818_9
+newmtl material_492
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_492.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-5242_-4217_57
+newmtl material_493
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_493.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-5235_-3828_9
+newmtl material_494
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_494.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-4464_-3824_9
+newmtl material_495
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_495.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-4464_-3824_9
+newmtl material_496
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_496.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-4681_-4278_317
+newmtl material_497
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_497.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-4304_-3547_261
+newmtl material_498
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_498.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-5431_-3680_113
+newmtl material_499
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_499.tga
+
+# maps/d1_trainstation_02/stone/stonefloor006b_-5235_-3828_9
+newmtl material_500
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_500.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-5431_-3955_108
+newmtl material_501
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_501.tga
+
+# maps/d1_trainstation_02/tile/tilefloor018a_-5525_-3818_9
+newmtl material_502
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_502.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-5431_-3680_113
+newmtl material_503
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_503.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-5525_-3818_9
+newmtl material_504
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_504.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-5447_-3832_298
+newmtl material_505
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_505.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-5235_-3828_9
+newmtl material_506
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_506.tga
+
+# maps/d1_trainstation_02/tile/tileroof002a_-3968_-2048_128
+newmtl material_507
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_507.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-5447_-3832_298
+newmtl material_508
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_508.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-5519_-3453_316
+newmtl material_509
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_509.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-5519_-3508_132
+newmtl material_510
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_510.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-5525_-3818_9
+newmtl material_511
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_511.tga
+
+# maps/d1_trainstation_02/building_template/building_template003e_-5431_-3680_113
+newmtl material_512
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_512.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-5431_-3680_113
+newmtl material_513
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_513.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-5447_-3832_298
+newmtl material_514
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_514.tga
+
+# maps/d1_trainstation_02/building_template/building_template012b_-5431_-3955_108
+newmtl material_515
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_515.tga
+
+# PLASTER/PLASTERWALL030A
+newmtl material_516
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_516.tga
+
+# BUILDING_TEMPLATE/COURTYARD_TEMPLATE002F
+newmtl material_517
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_517.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002c_-5238_-4151_323
+newmtl material_518
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_518.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002e_-4681_-4278_317
+newmtl material_519
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_519.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002j_-4681_-4278_317
+newmtl material_520
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_520.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall030c_-5216_-4666_61
+newmtl material_521
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_521.tga
+
+# maps/d1_trainstation_02/tile/tilefloor018a_-5242_-4217_57
+newmtl material_522
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_522.tga
+
+# maps/d1_trainstation_02/tile/tilefloor018a_-5216_-4666_61
+newmtl material_523
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_523.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall030c_-5242_-4217_57
+newmtl material_524
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_524.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002j_-5238_-4151_323
+newmtl material_525
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_525.tga
+
+# maps/d1_trainstation_02/building_template/courtyard_template002c_-5195_-4151_453
+newmtl material_526
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_526.tga
+
+# maps/d1_trainstation_02/tile/tilefloor018a_-5328_-4544_61
+newmtl material_527
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_527.tga
+
+# maps/d1_trainstation_02/plaster/plasterwall030c_-5328_-4544_61
+newmtl material_528
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_528.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-5056_-5568_64
+newmtl material_529
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_529.tga
+
+# maps/d1_trainstation_02/building_template/building_template012d_-3896_-5927_329
+newmtl material_530
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_530.tga
+
+# maps/d1_trainstation_02/building_template/building_template012h_-3896_-5927_329
+newmtl material_531
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_531.tga
+
+# maps/d1_trainstation_02/building_template/building_template012g_-3896_-5927_329
+newmtl material_532
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_532.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001c_-3896_-5927_329
+newmtl material_533
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_533.tga
+
+# maps/d1_trainstation_02/storefront_template/storefront_template001a_-4164_-5927_315
+newmtl material_534
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_534.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-3896_-5927_329
+newmtl material_535
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_535.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-3896_-6007_608
+newmtl material_536
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_536.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor019a_-4582_-5868_78
+newmtl material_537
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_537.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033c_-5056_-5568_64
+newmtl material_538
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_538.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor033k_-5056_-5568_64
+newmtl material_539
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_539.tga
+
+# maps/d1_trainstation_02/concrete/concretefloor028c_-5216_-4666_61
+newmtl material_540
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_540.tga
+
+# EFFECTS/COM_SHIELD002A
+newmtl material_541
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_541.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_TEMPLATE001D
+newmtl material_542
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_542.tga
+
+# BUILDING_TEMPLATE/BUILDING_TRAINSTATION_WINDOW002D
+newmtl material_543
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_543.tga
+
+# maps/d1_trainstation_02/glass/glasswindow017a_-1609_-121_369
+newmtl material_544
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_544.tga
+
+newmtl material_545
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+
+# maps/d1_trainstation_02/effects/combineshield/comshieldwall_-1609_-121_369
+newmtl material_546
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_546.tga
+
+# maps/d1_trainstation_02/effects/combineshield/comshieldwall_-4276_16_9
+newmtl material_547
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_547.tga
+
+# maps/d1_trainstation_02/effects/combineshield/comshieldwall2_-1609_-121_369
+newmtl material_548
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_548.tga
+
+# maps/d1_trainstation_02/effects/combineshield/comshieldwall2_-4276_16_9
+newmtl material_549
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_549.tga
+
+# maps/d1_trainstation_02/effects/combineshield/comshieldwall_-640_-1512_346
+newmtl material_550
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_550.tga
+
+# maps/d1_trainstation_02/effects/combineshield/comshieldwall2_-640_-1512_346
+newmtl material_551
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_551.tga
+
+# LIGHTS/WHITE002
+newmtl material_552
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_552.tga
+
+# PROPS/PAPERPOSTER003A
+newmtl material_553
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_553.tga
+
+# models\props_c17/Awning001b
+newmtl material_554
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_554.tga
+
+# models\props_c17/awning001a
+newmtl material_555
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_555.tga
+
+# models\props_combine/combine_tower01a
+newmtl material_556
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_556.tga
+
+# models\props_combine/combine_tower01b
+newmtl material_557
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_557.tga
+
+# models\props_c17/utility_poles001
+newmtl material_558
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_558.tga
+
+# models\props_foliage/tree_deciduous_01a_leaves
+newmtl material_559
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_559.tga
+
+# models\props_foliage/tree_deciduous_01a_trunk
+newmtl material_560
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_560.tga
+
+# models\props_c17/lamppost03a_skin2
+newmtl material_561
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_561.tga
+
+# models\props_c17/lamppost03a
+newmtl material_562
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_562.tga
+
+# models\props_combine/combine_grate01a
+newmtl material_563
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_563.tga
+
+# models\props_combine/combine_barricade_tall03b
+newmtl material_564
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_564.tga
+
+# models\props_combine/combine_barricade_short01a
+newmtl material_565
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_565.tga
+
+# models\props_combine/com_shield001a
+newmtl material_566
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_566.tga
+
+# models\props_trainstation/Trainstation_Ornament001
+newmtl material_567
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_567.tga
+
+# models\props_c17/playgroundTick-tack-toe_post01
+newmtl material_568
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_568.tga
+
+# models\props_combine\\combine_bridge
+newmtl material_569
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_569.tga
+
+# models\props_trainstation/TrackProps01a
+newmtl material_570
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_570.tga
+
+# models\props_junk/garbage002a_01
+newmtl material_571
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_571.tga
+
+# models\effects/vol_light001
+newmtl material_572
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_572.png
+
+# models\props_wasteland/windowframe001a
+newmtl material_573
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_573.tga
+
+# models\props_wasteland/prison_objects004
+newmtl material_574
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_574.tga
+
+# models\props_wasteland/prison_lamp001a
+newmtl material_575
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_575.tga
+
+# models\props_wasteland/fence_sheet01
+newmtl material_576
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_576.tga
+
+# models\props_wasteland/fence_alpha
+newmtl material_577
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_577.tga
+
+# models\combine_room/combine_monitor002
+newmtl material_578
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_578.tga
+
+# models\props_interiors/SodaMachine01a
+newmtl material_579
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_579.tga
+
+# models\props_c17/fence_composite01
+newmtl material_580
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_580.tga
+
+# models\props_c17/fence_alpha
+newmtl material_581
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_581.tga
+
+# models\props_c17/Metalladder002
+newmtl material_582
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_582.tga
+
+# models\props_c17/Metalladder003
+newmtl material_583
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_583.tga
+
+# models\props_wasteland/prison_objects002
+newmtl material_584
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_584.tga
+
+# models\props_trainstation/Trainstation_Column001
+newmtl material_585
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_585.tga
+
+# models\props_trainstation/Trainstation_Arch001
+newmtl material_586
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_586.tga
+
+# models\props_c17/Awning001c
+newmtl material_587
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_587.tga
+
+# models\props_foliage/tree_deciduous_01a_lod-leaves
+newmtl material_588
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_588.tga
+
+# models\props_trainstation/Trainstation_Bench001
+newmtl material_589
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_589.tga
+
+# models\props_pipes/PipeMetal004a
+newmtl material_590
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_590.tga
+
+# models\props_pipes/PipeMetal004b
+newmtl material_591
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_591.tga
+
+# models\props_rooftop/Scaffolding01a
+newmtl material_592
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_592.tga
+
+# models\props_combine/combine_barricade_tall02b
+newmtl material_593
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_593.tga
+
+# models\props_combine\citadel_cable
+newmtl material_594
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_594.tga
+
+# models\props_combine\Combine_Citadel001b_opaque
+newmtl material_595
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_595.tga
+
+# models\props_combine\Combine_Citadel001b
+newmtl material_596
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_596.tga
+
+# models\props_buildings\residential
+newmtl material_597
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_597.tga
+
+# models\props_buildings\antenna
+newmtl material_598
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_598.tga
+
+# models\props_buildings\gov_upscale
+newmtl material_599
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_599.tga
+
+# models\props_buildings\hill_cluster
+newmtl material_600
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_600.tga
+
+# models\props_trainstation/Trainstation_Post001
+newmtl material_601
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_601.tga
+
+# models\props_rooftop/RoofTop_Set01a
+newmtl material_602
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_602.tga
+
+# models\props_rooftop\dome_terminal_01
+newmtl material_603
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_603.tga
+
+# models\props_rooftop\dome_terminal_02
+newmtl material_604
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_604.tga
+
+# models\props_pipes/GutterMetal01a
+newmtl material_605
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_605.tga
+
+# models\props_trainstation/lobby_fixtures002a
+newmtl material_606
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_606.tga
+
+# models\props_trainstation/lobby_fixtures001a
+newmtl material_607
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_607.tga
+
+# models\props_c17/playground_swingset01
+newmtl material_608
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_608.tga
+
+# models\props_c17/playground_jungle_gym01a
+newmtl material_609
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_609.tga
+
+# models\props_junk/garbage001a_01
+newmtl material_610
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_610.tga
+
+# models\props_combine/combine_light001a
+newmtl material_611
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_611.tga
+
+# models\props_interiors/LightBulb01a_on
+newmtl material_612
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_612.tga
+
+# Models\props_wasteland\prison_objects004_on
+newmtl material_613
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_613.tga
+
+# models\props_trainstation/Trainstation_Clock_Glass001
+newmtl material_614
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_614.tga
+
+# models\props_trainstation/Trainstation_Clock001
+newmtl material_615
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_615.tga
+
+# models\props_combine/combine_smallmonitor_sheet
+newmtl material_616
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_616.tga
+
+# models\props_combine/combine_lock01
+newmtl material_617
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_617.tga
+
+# models\props_c17/playground
+newmtl material_618
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_618.tga
+
+# models\props_c17/light_domelight02_on
+newmtl material_619
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_619.tga
+
+# models\combine_apc\glass
+newmtl material_620
+opaque
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd trainstation2_material_620.tga
+
+# models\combine_apc\apc01blue
+newmtl material_621
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_621.tga
+
+# models\props_junk/Cardboard_boxes001a
+newmtl material_622
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_622.tga
+
+# models\props_junk/TrashDumpster01a
+newmtl material_623
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_623.tga
+
+# models\combine_camera/combine_camera001
+newmtl material_624
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_624.tga
+
+# models\props_c17/playground_teetertoter_seat
+newmtl material_625
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_625.tga
+
+# models\props_junk/PopCan01a
+newmtl material_626
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_626.tga
+
+# models\props_junk/Wood_PalletCrate001a
+newmtl material_627
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_627.tga
+
+# models\props_c17/door01a_skin3
+newmtl material_628
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_628.tga
+
+# models\props_c17/door01a_skin8
+newmtl material_629
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_629.tga
+
+# models\props_junk/PlasticCrate01c
+newmtl material_630
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_630.tga
+
+# models\props_junk/PlasticCrate01e
+newmtl material_631
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_631.tga
+
+# models\props_junk/plastic_junk001a
+newmtl material_632
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_632.tga
+
+# models\props_junk/cinderblock01a
+newmtl material_633
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_633.tga
+
+# models\props_junk/MetalBucket01a
+newmtl material_634
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_634.tga
+
+# models\props_junk/pot_objects01
+newmtl material_635
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_635.tga
+
+# models\props_c17/playground_carousel01
+newmtl material_636
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_636.tga
+
+# models\props_c17/Furniture_DetailProps001a
+newmtl material_637
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_637.tga
+
+# models\props_junk/Shoe001a
+newmtl material_638
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_638.tga
+
+# models\props_junk/woodcrates01a
+newmtl material_639
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_639.tga
+
+# models\props_combine\\dispenser_sheet
+newmtl material_640
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_640.tga
+
+# models\weapons\w_package\Package_sheet
+newmtl material_641
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_641.tga
+
+# models\props_c17\\doll01
+newmtl material_642
+opaque
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd trainstation2_material_642.tga
+

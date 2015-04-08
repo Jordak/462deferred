@@ -1,0 +1,54 @@
+model
+{
+	file "ep2_indoor.obj"
+}
+
+model
+{
+	file "hunter.obj"
+	position -35.765499 -9479.659180 -1420.412354
+	orientation 0.0 0.0 60.0
+}
+
+pointlight
+{
+	position  71.410278 -9609.028320 -1290.933838 
+	ambient 0.2
+	color 0.95 0.95 1.0
+}
+
+pointlight
+{
+	position 500.488739 -9658.208984 -1312.396729 
+	ambient 0.0
+	color 1.0 1.0 0.187
+}
+
+pointlight
+{
+	position 538.522827 -10159.922852 -1281.964111 
+	ambient 0.0
+	color 0.45 0.50 0.8
+}
+
+pointlight
+{
+	position -42.360367 -10195.899414 -1332.033813 
+	ambient 0.0
+	color 0.45 0.50 0.8
+}
+
+pointlight
+{
+	position  662.709351 -9202.893555 -1249.855469 
+	ambient 0.0
+	color 0.55 0.60 0.8
+}
+
+
+pointlight
+{
+	position 470.580353 -9879.458984 -1466.183838 
+	ambient 0.0
+	color 0.9 0.05 0.05
+}

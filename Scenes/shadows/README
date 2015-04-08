@@ -1,0 +1,14 @@
+The scenes in this folder were created by Erik Sintorn to test high-quality shadow rendering algorithms. You may find the 'villa' scene useful if you are working on
+improving the quality of your shadow edges. The 'closedcitadel' scene is derived
+from the 'EpicCitadel' scene, released by Epic Games as part of the UDK (Unreal
+Development Kit, the free version of UE3), but contains only closed meshes.
+
+If you use either of these scenes outside this class, you should credit Epic Games
+and Erik Sintorn, and maybe email him as well. You can check out Erik's exciting
+research on his website: http://www.cse.chalmers.se/~d00sint/
+
+Note: The 'mycitadel.scene.original' file is the scene file used by Erik Sintorn's
+code for his 2014 shadow-voxel-octree paper. It was originally named 'mycitadel.scene'
+so the .original tag was added to differentiate the files. The additional material
+parameters are probably not useful to you, but you can use this file if you decide
+to download Erik's code (it has not been modified except for the name.)

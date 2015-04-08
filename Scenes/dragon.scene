@@ -1,0 +1,14 @@
+model
+{
+	file "dragon.obj"
+	position 0 0 0
+	scale 3 3 3
+	orientation -80 0 0
+}
+
+sunlight
+{
+	direction 10 -5 -10
+	color 1 1 1
+	ambient 0.2
+}
