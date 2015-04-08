@@ -106,3 +106,8 @@ void Mesh::compute_normals()
 {
 	return;
 }
+
+int Mesh::get_materialID() const
+{
+    return materialID;
+}

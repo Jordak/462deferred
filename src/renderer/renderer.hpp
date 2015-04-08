@@ -3,6 +3,7 @@
 
 #include <renderer/camera.hpp>
 #include <scene/scene.hpp>
+#include <SFML/Graphics/Texture.hpp>
 
 class Renderer {
 public:
@@ -20,6 +21,12 @@ public:
         
         unsigned int num_triangles;
         unsigned int num_vertices;
+        
+        const ObjModel::ObjMtl* material;
+        const ObjModel* model;
+        
+        sf::Texture diffuseTexture;
+        sf::Texture ambientTexture;
     };
     
 	// You may want to build some scene-specific OpenGL data before the first frame
