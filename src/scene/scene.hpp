@@ -2,7 +2,6 @@
 #define _SCENE_H_
 
 #include <SFML/System/String.hpp>
-#include <scene/mesh.hpp>
 #include <scene/objmodel.hpp>
 #include <vector>
 #include <string>
@@ -20,12 +19,9 @@ public:
 		                       // look through glm's docs to see what options are available!
 							   // keep in mind the values from the scene file are in degrees!
 		glm::vec3 scale;
-        glm::mat4 model_matrix;
-        
+
 		// you may want to change this when you build meshes
 		const ObjModel * model;
-		const Mesh* mesh;
-
 	};
 
 	struct DirectionalLight
@@ -66,15 +62,14 @@ public:
 
 private:
 	std::unordered_map<std::string, ObjModel> objmodels;
+	std::vector<StaticModel> models;
 	DirectionalLight sunlight;
 	std::vector<SpotLight> spotlights;
 	std::vector<PointLight> pointlights;
 	
 public:
 	Scene();
-    bool loadFromFile( std::string filename );
-    std::vector<StaticModel> models;
-    glm::mat4 get_model_matrix(unsigned int i) const;
+	bool loadFromFile( std::string filename );
 	~Scene();
 };
 

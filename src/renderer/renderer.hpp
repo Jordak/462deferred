@@ -7,21 +7,6 @@
 class Renderer {
 public:
 
-    struct Renderable
-    {
-        glm::mat4 transform_matrix;
-        
-        float* vertices;
-        unsigned int* indices;
-        
-        unsigned int vao;
-        unsigned int vbo[4];
-        unsigned int prog;
-        
-        unsigned int num_triangles;
-        unsigned int num_vertices;
-    };
-    
 	// You may want to build some scene-specific OpenGL data before the first frame
 	bool initialize( const Camera& camera, const Scene& scene );
 

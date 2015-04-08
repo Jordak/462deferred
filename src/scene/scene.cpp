@@ -1,9 +1,7 @@
 #include "scene.hpp"
 #include <SFML/System/Err.hpp>
-#include <iostream>
 #include <fstream>
 #include <limits>
-#include <glm/gtc/matrix_transform.hpp>
 
 /* Using a macro to avoid repeating excessively long, templated statement for a simple effect.
  * This takes a std::ifstream and a char and advances the ifstream until it passes the next
@@ -12,8 +10,6 @@
  * Ignore the warnings about max() on Windows. They're lying, it compiles.
  */
 #define SKIP_THRU_CHAR( s , x ) if ( s.good() ) s.ignore( std::numeric_limits<std::streamsize>::max(), x )
-
-glm::mat4 calculate_model_matrix(Scene::StaticModel model);
 
 Scene::Scene()
 {
@@ -197,7 +193,6 @@ bool Scene::loadFromFile( std::string filename )
 			SKIP_THRU_CHAR( istream, '\n' );
 
 			StaticModel model;
-            model.scale = glm::vec3(1.0);
 			while ( istream.good( ) && istream.peek( ) != '}' )
 			{
 				istream >> token;
@@ -238,13 +233,9 @@ bool Scene::loadFromFile( std::string filename )
 						return false;
 					}
 					model.model = &objmodels[token];
-					Mesh* mesh = new Mesh();
-					mesh->load(model.model);
-					model.mesh = mesh;
 				}
 				SKIP_THRU_CHAR( istream, '\n' );
 			}
-            model.model_matrix = calculate_model_matrix(model);
 			models.push_back( model );
 			SKIP_THRU_CHAR( istream, '\n' );
 		}
@@ -261,40 +252,4 @@ bool Scene::loadFromFile( std::string filename )
 
 Scene::~Scene()
 {
-}
-
-void sprint_matrix(glm::mat4 matrix)
-{
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            std::cout << matrix[i][j] << "    ";
-        }
-        std::cout << std::endl;
-    }
-    std::cout << "\n" << std::endl;
-}
-
-glm::mat4 calculate_model_matrix(Scene::StaticModel model)
-{
-    glm::mat4 transform = glm::scale(glm::mat4(1.0), model.scale);
-    sprint_matrix(transform);
-    /*
-    transform = glm::rotate(transform, model.orientation.x, glm::vec3(0.0, 0.0, 1.0));
-    sprint_matrix(transform);
-    transform = glm::rotate(transform, model.orientation.y, glm::vec3(1.0, 0.0, 0.0));
-    sprint_matrix(transform);
-    transform = glm::rotate(transform, model.orientation.z, glm::vec3(0.0, 1.0, 0.0));
-    sprint_matrix(transform);
-     */
-    transform = glm::translate(transform, model.position);
-    sprint_matrix(transform);
-    std::cout << "\n" << std::endl;
-    return transform;
-}
-
-glm::mat4 Scene::get_model_matrix(unsigned int i) const
-{
-    return models[i].model_matrix;
 }

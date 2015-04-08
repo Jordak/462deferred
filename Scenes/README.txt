@@ -1,5 +1,0 @@
-The /models and /textures folders contain a few commonly-used objects, including ones from p3. Feel free to use them to create simple test scenes for your renderer, like the provided scenes based on p3 scenes.
-
-You will need to edit lighting for all of the scenes yourself, so it might be a good idea to implement some controls in your renderer to ajust position, orientation, and color of lights at run-time. The file format is designed to be simple and easy to edit, so you can easily generate scenes using any models you find in .obj format. You are creating something useful and interesting, so you should make scenes to demonstrate what you've accomplished!
-
-We've also provided a few larger scenes, including well-recognized test cases like CryTek's "sponza" map. Again, you'll need to light these scenes yourself (some default values have been set, but they are not necessarily 'good' lighting for the scene). Keep in mind as you begin working with these scenes that the entire scene is in one .obj file - you'll need to improve your model-importing code to handle multiple meshes with different materials.
