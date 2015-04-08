@@ -261,10 +261,6 @@ bool Scene::loadFromFile( std::string filename )
 
 Scene::~Scene()
 {
-    for (unsigned int i = 0; i < models.size(); i++)
-    {
-        delete (models[i].mesh);
-    }
 }
 
 void sprint_matrix(glm::mat4 matrix)

@@ -1,12 +1,5 @@
 model
 {
-	file "models/cube2.obj"
-	position 0 1 0
-	orientation 0 75 0
-}
-
-model
-{
 	file "models/checkered_floor.obj"
 }
 

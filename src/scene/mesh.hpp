@@ -25,7 +25,6 @@ public:
 	const MeshVertex* get_vertices() const;
 	size_t num_triangles() const;
 	size_t num_vertices() const;
-    int get_materialID() const;
 
 	bool are_normals_valid() const;
 	bool are_tex_coords_valid() const;
@@ -43,6 +42,4 @@ private:
 
 	bool has_normals;
 	bool has_tcoords;
-    
-    int materialID;
 };

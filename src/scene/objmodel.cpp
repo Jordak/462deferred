@@ -354,13 +354,3 @@ size_t ObjModel::num_normals() const
 {
 	return normals.size();
 }
-
-const ObjModel::ObjMtl* ObjModel::get_material(int i) const
-{
-    return &materials[i];
-}
-
-const sf::Image* ObjModel::get_texture(int i) const
-{
-    return &textures[i];
-}
