@@ -261,6 +261,10 @@ bool Scene::loadFromFile( std::string filename )
 
 Scene::~Scene()
 {
+    for (unsigned int i = 0; i < models.size(); i++)
+    {
+        delete(models[i].mesh);
+    }
 }
 
 void sprint_matrix(glm::mat4 matrix)
@@ -279,18 +283,16 @@ void sprint_matrix(glm::mat4 matrix)
 glm::mat4 calculate_model_matrix(Scene::StaticModel model)
 {
     glm::mat4 transform = glm::scale(glm::mat4(1.0), model.scale);
-    sprint_matrix(transform);
-    /*
+    //sprint_matrix(transform);
     transform = glm::rotate(transform, model.orientation.x, glm::vec3(0.0, 0.0, 1.0));
-    sprint_matrix(transform);
+    //sprint_matrix(transform);
     transform = glm::rotate(transform, model.orientation.y, glm::vec3(1.0, 0.0, 0.0));
-    sprint_matrix(transform);
+    //sprint_matrix(transform);
     transform = glm::rotate(transform, model.orientation.z, glm::vec3(0.0, 1.0, 0.0));
-    sprint_matrix(transform);
-     */
+    //sprint_matrix(transform);
     transform = glm::translate(transform, model.position);
-    sprint_matrix(transform);
-    std::cout << "\n" << std::endl;
+    //sprint_matrix(transform);
+    //std::cout << "\n" << std::endl;
     return transform;
 }
 

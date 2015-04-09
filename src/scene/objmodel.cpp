@@ -288,6 +288,14 @@ bool ObjModel::loadFromFile( std::string path, std::string filename )
 					}
 				}
 			}
+            else
+            {
+                istream >> v;
+                triangle.vertices[1] = v-1;
+                
+                istream >> v;
+                triangle.vertices[2] = v-1;
+            }
 			group.triangles.push_back( triangle );
 			SKIP_THRU_CHAR( istream, '\n' );
 		}
@@ -308,7 +316,7 @@ bool ObjModel::loadFromFile( std::string path, std::string filename )
 
 	if ( istream.fail( ) )
 	{
-		sf::err( ) << "An error occured while reading .obj file; last token was: " << token << std::endl;
+        sf::err( ) << "objmodel.cpp: An error occured while reading .obj file; last token was: " << token << " <-" << std::endl;
 		return false;
 	}
 

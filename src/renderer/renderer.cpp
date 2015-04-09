@@ -14,7 +14,7 @@ const Mesh* mesh;
 
 const char* vertex_file_name = "src/shaders/default.vert";
 const char* fragment_file_name1 = "src/shaders/default.frag";
-const char* fragment_file_name2 = "src/shaders/second_pass.frag";
+const char* fragment_file_name2 = "src/shaders/depth.frag";
 const GLsizeiptr vertex_size = 8*sizeof((float)(1.0));
 const GLsizeiptr triangle_size = 3*sizeof((unsigned int)(1));
 
@@ -24,6 +24,7 @@ GLuint fs_handler2;
 GLuint prog1;
 GLuint prog2;
 GLuint buffers[4];
+GLuint rectBuffers[2];
 GLuint fboA;
 GLuint fboB;
 GLuint depthTex;
@@ -31,7 +32,9 @@ GLuint colorTex;
 GLuint w;
 GLuint h;
 
-GLfloat rect[12] = {0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 0.0};
+bool rectb = false;
+
+GLfloat rect[12] = {-1.0, -1.0, 0.0, 1.0, -1.0, 0.0, 1.0, 1.0, 0.0, -1.0, 1.0, 0.0};
 GLuint rectIndices[6] = {0, 1, 2, 0, 2, 3};
 
 char* textFileRead(const char* fn);
@@ -91,9 +94,9 @@ GLuint prepareFBO(GLuint color, GLuint depth)
     glGenFramebuffers(1, &fbo);
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, fbo);
     
-    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, color, 0);
-    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depth, 0);
-    
+    glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, color, 0);
+    glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depth, 0);
+    /*
     GLenum e = glCheckFramebufferStatus(GL_DRAW_FRAMEBUFFER);
     switch (e) {
             
@@ -123,7 +126,7 @@ GLuint prepareFBO(GLuint color, GLuint depth)
     {
         return(0);
     }
-    
+    */
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
     
     return fbo;
@@ -192,7 +195,6 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
 {
     std::cout << glGetString(GL_VERSION) << std::endl;
     
-    
     GLint m_viewport[4];
     glGetIntegerv(GL_VIEWPORT, m_viewport);
     
@@ -200,6 +202,7 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
     h = m_viewport[3];
     
     mesh = scene.models[0].mesh;
+    
     size_t num_vertices = mesh->num_vertices();
     std::cout << mesh->num_triangles() << std::endl;
     
@@ -224,11 +227,15 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
     glGenBuffers(4, buffers);
     
     //vertex coordinates buffer
+    print_errors("before vertexPosition block");
     glBindBuffer(GL_ARRAY_BUFFER, buffers[0]); // the array buffer from now on is buffers[0]
+    print_errors("after glBindBuffer for vertexPosition block");
     glBufferData(GL_ARRAY_BUFFER, vertex_size*num_vertices, mesh->get_vertices(), GL_STATIC_DRAW);
+    print_errors("after glBufferData for vertexPosition block");
     glEnableVertexAttribArray(0);
+    print_errors("after glEnableVertexAttribArray for vertexPosition block");
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)0);
-    print_errors("after vertexPosition block");
+    print_errors("after glVertexAttribPointer for vertexPosition block");
     
     /*
     GLuint norm_id = glGetAttribLocation(prog, "vertexNormal");
@@ -248,25 +255,16 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
     glVertexAttribPointer(tex_id, 2, GL_FLOAT, GL_FALSE, vertex_size, (void*)6);
     print_errors("end of vertexTexCoord block");
     */
-     
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[3]);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, triangle_size*mesh->num_triangles(), mesh->get_triangles(), GL_STATIC_DRAW);
-    print_errors("end of element block");
     
     // unbind the VAO
 //    glBindVertexArray(0);
     
     prog1 = glCreateProgram();
-    prog2 = glCreateProgram();
     
     glAttachShader(prog1, vs_handler);
     glAttachShader(prog1, fs_handler1);
     
-    glAttachShader(prog2, vs_handler);
-    glAttachShader(prog2, fs_handler2);
-    
     glBindAttribLocation(prog1, 0, "vertexPosition");
-    glBindAttribLocation(prog2, 0, "vertexPosition");
     
     glLinkProgram(prog1);
     
@@ -275,14 +273,14 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
     if (isLinked == GL_FALSE)
     {
         GLint maxLength = 0;
-        glGetProgramiv(prog2, GL_INFO_LOG_LENGTH, &maxLength);
+        glGetProgramiv(prog1, GL_INFO_LOG_LENGTH, &maxLength);
         
         //The maxLength includes the NULL character
         std::vector<GLchar> infoLog(maxLength);
-        glGetProgramInfoLog(prog2, maxLength, &maxLength, &infoLog[0]);
+        glGetProgramInfoLog(prog1, maxLength, &maxLength, &infoLog[0]);
         
         //The program is useless now. So delete it.
-        glDeleteProgram(prog2);
+        glDeleteProgram(prog1);
         
         for (int i = 0; i < maxLength; i++)
         {
@@ -291,6 +289,27 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
         std::cout << std::endl;
         return false;
     }
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[3]);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, triangle_size*mesh->num_triangles(), mesh->get_triangles(), GL_STATIC_DRAW);
+    print_errors("end of element block");
+    
+    glGenBuffers(2, rectBuffers);
+    
+    glBindBuffer(GL_ARRAY_BUFFER, rectBuffers[0]);
+    glBufferData(GL_ARRAY_BUFFER, 4*3*sizeof(float), rect, GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (void*)0);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rectBuffers[1]);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 2*3*sizeof(unsigned int), rectIndices, GL_STATIC_DRAW);
+    
+    prog2 = glCreateProgram();
+    
+    glAttachShader(prog2, vs_handler);
+    glAttachShader(prog2, fs_handler2);
+    
+    glBindAttribLocation(prog2, 0, "vertexPosition");
     
     glLinkProgram(prog2);
     
@@ -323,8 +342,14 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
 
 void drawVAO(const Camera& camera, const Scene& scene, GLuint prog)
 {
-    glBindVertexArray(vao);
-    print_errors("after glBindVertexArray");
+    glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)0);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[3]);
+    
+    //glBufferData(GL_ELEMENT_ARRAY_BUFFER, triangle_size*mesh->num_triangles(), mesh->get_triangles(), GL_STATIC_DRAW);
+    
     glm::mat4 modelViewProjectionMatrix = get_mvp(scene, camera);
     
     GLuint mvp = glGetUniformLocation(prog, "mvp");
@@ -334,26 +359,50 @@ void drawVAO(const Camera& camera, const Scene& scene, GLuint prog)
     
     glDrawElements(GL_TRIANGLES, mesh->num_triangles()*3, GL_UNSIGNED_INT, 0);
     print_errors("after drawElements");
-//    glBindVertexArray(0);
+}
+
+void drawRect(const Camera& camera, const Scene& scene, GLuint prog)
+{
+    glBindBuffer(GL_ARRAY_BUFFER, rectBuffers[0]);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rectBuffers[1]);
+    
+    //glBufferData(GL_ELEMENT_ARRAY_BUFFER, triangle_size*mesh->num_triangles(), mesh->get_triangles(), GL_STATIC_DRAW);
+    
+    glm::mat4 modelViewProjectionMatrix = get_mvp(scene, camera);
+    modelViewProjectionMatrix = glm::mat4(1.0);
+    
+    GLuint mvp = glGetUniformLocation(prog, "mvp");
+    print_errors("after glGetUniformLocation");
+    glUniformMatrix4fv(mvp, 1, GL_FALSE, glm::value_ptr(modelViewProjectionMatrix));
+    print_errors("after glUniformMatrix4fv");
+    
+    glDrawElements(GL_TRIANGLES, 2*3, GL_UNSIGNED_INT, 0);
+    print_errors("after drawElements");
 }
 
 void Renderer::render( const Camera& camera, const Scene& scene )
 {
     // sets textures of fbo to output textures
     glBindFramebuffer(GL_FRAMEBUFFER, fboA);
+    //glBindFramebuffer(GL_FRAMEBUFFER, 0);
     print_errors("after glBindFrameBuffer(fboA)");
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
     
+    //glUseProgram(prog2);
+    //drawRect(camera, scene, prog2);
+    
     glUseProgram(prog1);
-    print_errors("after glUseProgram(prog1)");
-    
     drawVAO(camera, scene, prog1);
-    print_errors("after drawVAO 1");
     
-    //glDisable(GL_DEPTH_TEST);
+    glDisable(GL_DEPTH_TEST);
     print_errors("after glDisable(GL_DEPTH_TEST)");
+    
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
     
     glUseProgram(prog2);
     print_errors("after glUseProgram(prog2)");
@@ -376,10 +425,11 @@ void Renderer::render( const Camera& camera, const Scene& scene )
     glUniform1f(glGetUniformLocation(prog2, "screenHeight"), hf);
     print_errors("after glUniform");
     
-    drawVAO(camera, scene, prog2);
+    drawRect(camera, scene, prog2);
     print_errors("after drawVAO 2");
     
     glUseProgram(0);
+    
 }
 
 void Renderer::release()

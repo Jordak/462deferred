@@ -9,7 +9,7 @@ out vec4 outputF;
 float LinearizeDepth(vec2 uv)
 {
     float n = 1.0; // camera z near
-    float f = 10.0; // camera z far
+    float f = 20.0; // camera z far
     float z = texture(depth, uv).x;
     return (n * z) / ( f - z * (f - n) );
 }

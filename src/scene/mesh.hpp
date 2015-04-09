@@ -42,4 +42,11 @@ private:
 
 	bool has_normals;
 	bool has_tcoords;
+    
+    //glm::vec3 Ka;
+    glm::vec3 Kd;
+    //glm::vec3 Ks;
+    
+    //sf::Image* diffuseImage;
+    //sf::Image* ambientImage;
 };
