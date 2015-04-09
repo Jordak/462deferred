@@ -4,6 +4,8 @@
 #include <fstream>
 #include <limits>
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/euler_angles.hpp>
+#include <math.h>
 
 /* Using a macro to avoid repeating excessively long, templated statement for a simple effect.
  * This takes a std::ifstream and a char and advances the ifstream until it passes the next
@@ -238,9 +240,11 @@ bool Scene::loadFromFile( std::string filename )
 						return false;
 					}
 					model.model = &objmodels[token];
+                    //std::cout << "Before mesh" << std::endl;
 					Mesh* mesh = new Mesh();
 					mesh->load(model.model);
-					model.mesh = mesh;
+                    model.mesh = mesh;
+                    //std::cout << "After mesh" << std::endl;
 				}
 				SKIP_THRU_CHAR( istream, '\n' );
 			}
@@ -282,18 +286,15 @@ void sprint_matrix(glm::mat4 matrix)
 
 glm::mat4 calculate_model_matrix(Scene::StaticModel model)
 {
-    glm::mat4 transform = glm::scale(glm::mat4(1.0), model.scale);
-    //sprint_matrix(transform);
-    transform = glm::rotate(transform, model.orientation.x, glm::vec3(0.0, 0.0, 1.0));
-    //sprint_matrix(transform);
-    transform = glm::rotate(transform, model.orientation.y, glm::vec3(1.0, 0.0, 0.0));
-    //sprint_matrix(transform);
-    transform = glm::rotate(transform, model.orientation.z, glm::vec3(0.0, 1.0, 0.0));
-    //sprint_matrix(transform);
-    transform = glm::translate(transform, model.position);
-    //sprint_matrix(transform);
-    //std::cout << "\n" << std::endl;
-    return transform;
+    float roll = (M_PI/180.0) * model.orientation.x;
+    float pitch = (M_PI/180.0) * model.orientation.y;
+    float yaw = (M_PI/180.0) * model.orientation.z;
+    
+    
+    glm::mat4 scale = glm::scale(glm::mat4(1.0), model.scale);
+    glm::mat4 rotation = glm::yawPitchRoll(yaw, pitch, roll);
+    glm::mat4 translation = glm::translate(glm::mat4(1.0), model.position);
+    return translation * rotation * scale;
 }
 
 glm::mat4 Scene::get_model_matrix(unsigned int i) const

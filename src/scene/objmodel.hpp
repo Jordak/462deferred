@@ -72,6 +72,9 @@ public:
 	size_t num_vertices() const;
 	size_t num_texcoords() const;
 	size_t num_normals() const;
+    
+    const ObjMtl* get_materials() const;
+    const sf::Image* get_textures() const;
 
 private:
 	std::string name;

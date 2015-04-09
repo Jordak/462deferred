@@ -362,3 +362,13 @@ size_t ObjModel::num_normals() const
 {
 	return normals.size();
 }
+
+const ObjModel::ObjMtl* ObjModel::get_materials() const
+{
+    return materials.empty() ? nullptr : &materials[0];
+}
+
+const sf::Image* ObjModel::get_textures() const
+{
+    return textures.empty() ? nullptr : &textures[0];
+}

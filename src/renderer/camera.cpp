@@ -53,30 +53,40 @@ void Camera::handleInput( float deltaTime )
 	
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::E ))
     {
-        eye_pos = eye_pos + deltaTime*glm::vec3(0.0, 1.0, 0.0);
+        eye_pos = eye_pos + deltaTime*up_dir;
     }
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::Q ))
     {
-        eye_pos = eye_pos + deltaTime*glm::vec3(0.0, -1.0, 0.0);
+        eye_pos = eye_pos - deltaTime*up_dir;
     }
     
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::Up ))
     {
         glm::vec3 axis = glm::cross(view_dir, up_dir);
         view_dir = glm::rotate(view_dir, rotation_speed*deltaTime, axis);
+        up_dir = glm::rotate(up_dir, rotation_speed*deltaTime, axis);
     }
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::Down ))
     {
         glm::vec3 axis = glm::cross(view_dir, up_dir);
         view_dir = glm::rotate(view_dir, -rotation_speed*deltaTime, axis);
+        up_dir = glm::rotate(up_dir, -rotation_speed*deltaTime, axis);
     }
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::Left ))
     {
-        view_dir = glm::rotate(view_dir, rotation_speed*deltaTime, up_dir);
+        view_dir = glm::rotate(view_dir, rotation_speed*deltaTime, glm::vec3(0.0f, 1.0f, 0.0f));
+        up_dir = glm::rotate(up_dir, rotation_speed*deltaTime, glm::vec3(0.0f, 1.0f, 0.0f));
     }
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::Right ))
     {
-        view_dir = glm::rotate(view_dir, -rotation_speed*deltaTime, up_dir);
+        view_dir = glm::rotate(view_dir, -rotation_speed*deltaTime, glm::vec3(0.0f, 1.0f, 0.0f));
+        up_dir = glm::rotate(up_dir, -rotation_speed*deltaTime, glm::vec3(0.0f, 1.0f, 0.0f));
+    }
+    
+    if (sf::Keyboard::isKeyPressed( sf::Keyboard::Space ))
+    {
+        up_dir = glm::vec3(0.0f, 1.0f, 0.0f);
+        view_dir = glm::vec3(0.0f, 0.0f, -1.0f);
     }
     
 }

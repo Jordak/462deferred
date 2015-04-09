@@ -3,23 +3,26 @@
 
 #include <renderer/camera.hpp>
 #include <scene/scene.hpp>
+#include <SFML/OpenGL.hpp>
 
 class Renderer {
 public:
 
-    struct Renderable
+    struct VBO
     {
-        glm::mat4 transform_matrix;
-        
-        float* vertices;
-        unsigned int* indices;
-        
-        unsigned int vao;
-        unsigned int vbo[4];
-        unsigned int prog;
-        
-        unsigned int num_triangles;
-        unsigned int num_vertices;
+        GLuint buffers[4];
+        GLuint prog;
+        GLuint num_triangles;
+    };
+    
+    struct GBuffer
+    {
+        GLuint diffuseID;
+        GLuint ambientID;
+        GLuint specularID;
+        GLuint diffuseTexID;
+        GLuint ambientTexID;
+        GLuint depthID;
     };
     
 	// You may want to build some scene-specific OpenGL data before the first frame

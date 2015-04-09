@@ -29,9 +29,18 @@ public:
 	bool are_normals_valid() const;
 	bool are_tex_coords_valid() const;
 
-
+    const ObjModel::ObjMtl* get_material() const;
+    const std::vector<sf::Image>* get_textures() const;
+    
 	bool initialize();
-	void compute_normals();
+    void compute_normals();
+    
+    glm::vec3 diffuse;
+    glm::vec3 ambient;
+    glm::vec3 specular;
+    
+    const sf::Image* diffuseImg;
+    const sf::Image* ambientImg;
 
 private:
 	typedef std::vector< MeshTriangle > MeshTriangleList;
@@ -43,10 +52,4 @@ private:
 	bool has_normals;
 	bool has_tcoords;
     
-    //glm::vec3 Ka;
-    glm::vec3 Kd;
-    //glm::vec3 Ks;
-    
-    //sf::Image* diffuseImage;
-    //sf::Image* ambientImage;
 };

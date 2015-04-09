@@ -1,8 +1,10 @@
 #version 330
 
-out vec4 outputF;
+layout(location=0) out vec3 diffuseOut;
+
+uniform vec3 diffuseU;
 
 void main()
 {
-    outputF = vec4(1.0, 0.0, 0.0, 1.0);
+    diffuseOut = diffuseU;
 }

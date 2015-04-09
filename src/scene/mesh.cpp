@@ -56,6 +56,22 @@ bool Mesh::load(const ObjModel* model)
 			m_triangle.vertices[0] = a;
 			m_triangle.vertices[1] = b;
 			m_triangle.vertices[2] = c;
+            
+            ObjModel::ObjMtl material = model->get_materials()[triangle.materialID];
+            diffuse = material.Kd;
+            ambient = material.Ka;
+            specular = material.Ks;
+            
+            
+            if (material.map_Kd >= 0)
+            {
+                diffuseImg = &(model->get_textures()[material.map_Kd]);
+            }
+            if (material.map_Ka >= 0)
+            {
+                ambientImg = &(model->get_textures()[material.map_Ka]);
+            }
+            
 			triangles.push_back(m_triangle);
 		}
 	}
@@ -106,3 +122,4 @@ void Mesh::compute_normals()
 {
 	return;
 }
+
