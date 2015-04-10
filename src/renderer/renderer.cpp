@@ -14,6 +14,7 @@ GLuint vao;
 const char* vs_passthrough_file = "src/shaders/passthrough.vert";
 const char* vs_standard_file = "src/shaders/standard.vert";
 const char* fs_geometry_file = "src/shaders/geometry.frag";
+const char* fs_cubegeo_file = "src/shaders/cubegeo.frag";
 const char* fs_depth_file = "src/shaders/depth.frag";
 const char* fs_dirlight_file = "src/shaders/dirlight.frag";
 
@@ -22,6 +23,7 @@ Renderer::GBuffer gBuffer;
 GLuint vs_passthrough;
 GLuint vs_standard;
 GLuint fs_geometry;
+GLuint fs_cubegeo;
 GLuint fs_depth;
 GLuint fs_dirlight;
 
@@ -123,7 +125,7 @@ GLuint createTextureFromImage(const sf::Image* image)
     GLuint tex;
     
     glGenTextures(1, &tex);
-    
+    glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, tex);
     
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -140,6 +142,45 @@ GLuint createTextureFromImage(const sf::Image* image)
                  0, GL_RGBA, GL_UNSIGNED_BYTE,
                  image->getPixelsPtr());
     print_errors("after glTexImage2D for texture");
+    
+    return tex;
+}
+
+GLuint createCubemapFromImage(const sf::Image* image)
+{
+    if (image->getPixelsPtr() == nullptr ||
+        image->getSize().x <= 0 || image->getSize().y <= 0 ||
+        image->getSize().x > GL_MAX_TEXTURE_SIZE || image->getSize().y > GL_MAX_TEXTURE_SIZE)
+    {
+        std::cout << "empty" << std::endl;
+        return 0;
+    }
+
+    GLuint tex;
+
+    print_errors("before gen for cube");
+    glGenTextures(1, &tex);
+
+    glActiveTexture(GL_TEXTURE0);
+    print_errors("before bind for cube");
+    glBindTexture(GL_TEXTURE_CUBE_MAP, tex);
+
+    print_errors("before parameters for cube");
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+
+
+    print_errors("before glTexImage2D for cube");
+    for (unsigned int i = 0; i < 6; i++)
+    {
+        glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB,
+                     image->getSize().x, image->getSize().y,
+                     0, GL_RGB, GL_UNSIGNED_BYTE, image->getPixelsPtr());
+    }
+    print_errors("after glTexImage2D for cube");
     
     return tex;
 }
@@ -272,10 +313,23 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     vbo.prog = glCreateProgram();
     
     glAttachShader(vbo.prog, vs_standard);
-    glAttachShader(vbo.prog, fs_geometry);
+
+    if (i == 0)
+    {
+        print_errors("before attach fs_cubegeo");
+        glAttachShader(vbo.prog, fs_cubegeo);
+        print_errors("after attach fs_cubegeo");
+    }
+    else
+    {
+        std::cout << vbo.num_triangles << std::endl;
+        glAttachShader(vbo.prog, fs_geometry);
+    }
     
+    print_errors("before attrib binds");
     glBindAttribLocation(vbo.prog, 0, "vertexPosition");
     glBindAttribLocation(vbo.prog, 2, "vertexTexCoord");
+    print_errors("after attrib binds");
     
     glLinkProgram(vbo.prog);
     
@@ -303,9 +357,18 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     vbo.diffuse = mesh->diffuse;
     vbo.ambient = mesh->ambient;
     vbo.specular = mesh->specular;
-    
-    vbo.diffuseTex = createTextureFromImage(mesh->diffuseImg);
-    vbo.ambientTex = createTextureFromImage(mesh->ambientImg);
+    if (i == 0)
+    {
+        print_errors("before cubemap call");
+        vbo.diffuseTex = createCubemapFromImage(mesh->diffuseImg);
+        std::cout << "HERE" << std::endl;
+        vbo.ambientTex = createCubemapFromImage(mesh->ambientImg);
+    }
+    else
+    {
+        vbo.diffuseTex = createTextureFromImage(mesh->diffuseImg);
+        vbo.ambientTex = createTextureFromImage(mesh->ambientImg);
+    }
     
     glUseProgram(vbo.prog);
     
@@ -313,12 +376,21 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     glUniform3fv(glGetUniformLocation(vbo.prog, "diffuseU"), 1, glm::value_ptr(vbo.diffuse));
     print_errors("after glUniform");
     
-    glUniform1i(glGetUniformLocation(vbo.prog, "diffuseTexU"), 0);
-    
     glActiveTexture(GL_TEXTURE0);
     print_errors("after glActiveTexture");
-    glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
+    if (i == 0)
+    {
+        glBindTexture(GL_TEXTURE_CUBE_MAP, vbo.diffuseTex);
+    }
+    else
+    {
+        glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
+    }
     print_errors("after glBindTexture");
+
+    glUniform1i(glGetUniformLocation(vbo.prog, "diffuseTexU"), 0);
+    
+
     
     glUseProgram(0);
     
@@ -429,6 +501,7 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
     vs_passthrough = initShader(vs_passthrough_file, GL_VERTEX_SHADER);
     vs_standard = initShader(vs_standard_file, GL_VERTEX_SHADER);
     fs_geometry = initShader(fs_geometry_file, GL_FRAGMENT_SHADER);
+    fs_cubegeo = initShader(fs_cubegeo_file, GL_FRAGMENT_SHADER);
     fs_depth = initShader(fs_depth_file, GL_FRAGMENT_SHADER);
     fs_dirlight = initShader(fs_dirlight_file, GL_FRAGMENT_SHADER);
     
@@ -492,10 +565,14 @@ void drawMeshVBO(const Camera& camera, const Scene& scene, unsigned int i)
     glUniformMatrix4fv(vpMat, 1, GL_FALSE, glm::value_ptr(get_vp(camera, scene)));
     print_errors("after glUniformMatrix4fv");
     
-    glActiveTexture(GL_TEXTURE0);
-    print_errors("after glActiveTexture");
-    glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
-    print_errors("after glBindTexture");
+    if (i == 0)
+    {
+        glBindTexture(GL_TEXTURE_CUBE_MAP, vbo.diffuseTex);
+    }
+    else
+    {
+        glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
+    }
     
     glDrawElements(GL_TRIANGLES, 3*vbo.num_triangles, GL_UNSIGNED_INT, 0);
     print_errors("after drawElements mesh");

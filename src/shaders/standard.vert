@@ -6,10 +6,12 @@ in vec2 vertexTexCoord;
 uniform mat4 modelMatrix;
 uniform mat4 viewProjectionMatrix;
 
+out vec3 vertexPositionI;
 out vec2 vertexTexCoordI;
 
 void main()
 {
 	gl_Position = (viewProjectionMatrix * modelMatrix) * vec4(vertexPosition, 1.0f);
-    vertexTexCoordI = vertexTexCoord*vertexPosition.xz;
+  vertexTexCoordI = vertexTexCoord;
+  vertexPositionI = vertexPosition;
 }
