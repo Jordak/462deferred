@@ -110,6 +110,40 @@ GLuint createRGBATexture()
     return tex;
 }
 
+GLuint createTextureFromImage(const sf::Image* image)
+{
+    if (image->getPixelsPtr() == nullptr ||
+        image->getSize().x <= 0 || image->getSize().y <= 0 ||
+        image->getSize().x > GL_MAX_TEXTURE_SIZE || image->getSize().y > GL_MAX_TEXTURE_SIZE)
+    {
+        std::cout << "empty" << std::endl;
+        return 0;
+    }
+    
+    GLuint tex;
+    
+    glGenTextures(1, &tex);
+    
+    glBindTexture(GL_TEXTURE_2D, tex);
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    
+    std::cout << image->getSize().x << ", " << image->getSize().y << std::endl;
+    
+    print_errors("before glTexImage2D for texture");
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA,
+                 image->getSize().x,
+                 image->getSize().y,
+                 0, GL_RGBA, GL_UNSIGNED_BYTE,
+                 image->getPixelsPtr());
+    print_errors("after glTexImage2D for texture");
+    
+    return tex;
+}
+
 Renderer::GBuffer prepareGBuffer()
 {
     Renderer::GBuffer gBuffer;
@@ -137,7 +171,7 @@ GLuint prepare_G_FBO(Renderer::GBuffer gBuffer)
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT4, GL_TEXTURE_2D, gBuffer.ambientTexID, 0);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, gBuffer.depthID, 0);
     
-    /*
+    {
     GLenum e = glCheckFramebufferStatus(GL_DRAW_FRAMEBUFFER);
     switch (e) {
             
@@ -167,7 +201,8 @@ GLuint prepare_G_FBO(Renderer::GBuffer gBuffer)
     {
         return(0);
     }
-    */
+    }
+    
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
     
     return fbo;
@@ -219,20 +254,18 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     const Mesh* mesh = scene.models[i].mesh;
     vbo.num_triangles = mesh->num_triangles();
     
-    glGenBuffers(4, vbo.buffers);
+    glGenBuffers(2, vbo.buffers);
     
-    //vertex coordinates buffer
-    print_errors("before vertexPosition block");
     glBindBuffer(GL_ARRAY_BUFFER, vbo.buffers[0]); // the array buffer from now on is buffers[0]
-    print_errors("after glBindBuffer for vertexPosition block");
     glBufferData(GL_ARRAY_BUFFER, sizeof(MeshVertex)*mesh->num_vertices(), mesh->get_vertices(), GL_STATIC_DRAW);
-    print_errors("after glBufferData for vertexPosition block");
-    glEnableVertexAttribArray(0);
-    print_errors("after glEnableVertexAttribArray for vertexPosition block");
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)0);
-    print_errors("after glVertexAttribPointer for vertexPosition block");
     
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo.buffers[3]);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)0);
+
+    glEnableVertexAttribArray(2);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_TRUE, sizeof(MeshVertex), (void*)(2*sizeof(glm::vec3)));
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo.buffers[1]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(MeshTriangle)*mesh->num_triangles(), mesh->get_triangles(), GL_STATIC_DRAW);
     print_errors("end of element block");
     
@@ -242,6 +275,7 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     glAttachShader(vbo.prog, fs_geometry);
     
     glBindAttribLocation(vbo.prog, 0, "vertexPosition");
+    glBindAttribLocation(vbo.prog, 2, "vertexTexCoord");
     
     glLinkProgram(vbo.prog);
     
@@ -266,10 +300,25 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
         std::cout << std::endl;
     }
     
+    vbo.diffuse = mesh->diffuse;
+    vbo.ambient = mesh->ambient;
+    vbo.specular = mesh->specular;
+    
+    vbo.diffuseTex = createTextureFromImage(mesh->diffuseImg);
+    vbo.ambientTex = createTextureFromImage(mesh->ambientImg);
+    
     glUseProgram(vbo.prog);
     
-    glUniform3fv(glGetUniformLocation(vbo.prog, "diffuseU"), 1, glm::value_ptr(mesh->diffuse));
+    print_errors("before glUniform");
+    glUniform3fv(glGetUniformLocation(vbo.prog, "diffuseU"), 1, glm::value_ptr(vbo.diffuse));
     print_errors("after glUniform");
+    
+    glUniform1i(glGetUniformLocation(vbo.prog, "diffuseTexU"), 0);
+    
+    glActiveTexture(GL_TEXTURE0);
+    print_errors("after glActiveTexture");
+    glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
+    print_errors("after glBindTexture");
     
     glUseProgram(0);
     
@@ -327,10 +376,16 @@ Renderer::VBO prepareRectVBO()
     glUseProgram(vbo.prog);
     
     glUniform1i(glGetUniformLocation(vbo.prog, "diffuse"), 0);
+    glUniform1i(glGetUniformLocation(vbo.prog, "diffuseTex"), 3);
     
     glActiveTexture(GL_TEXTURE0);
     print_errors("after glActiveTexture");
     glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseID);
+    print_errors("after glBindTexture");
+    
+    glActiveTexture(GL_TEXTURE3);
+    print_errors("after glActiveTexture");
+    glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseTexID);
     print_errors("after glBindTexture");
     
     glUniform1f(glGetUniformLocation(vbo.prog, "screenWidth"), wf);
@@ -417,11 +472,15 @@ void drawMeshVBO(const Camera& camera, const Scene& scene, unsigned int i)
     
     glUseProgram(vbo.prog);
     
-    glBindBuffer(GL_ARRAY_BUFFER, vbo.buffers[0]);
+    glBindBuffer(GL_ARRAY_BUFFER, vbo.buffers[0]); // the array buffer from now on is buffers[0]
+    
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)0);
     
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo.buffers[3]);
+    glEnableVertexAttribArray(2);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_TRUE, sizeof(MeshVertex), (void*)(2*sizeof(glm::vec3)));
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo.buffers[1]);
     
     GLuint mMat = glGetUniformLocation(vbo.prog, "modelMatrix");
     print_errors("after glGetUniformLocation");
@@ -432,6 +491,11 @@ void drawMeshVBO(const Camera& camera, const Scene& scene, unsigned int i)
     print_errors("after glGetUniformLocation");
     glUniformMatrix4fv(vpMat, 1, GL_FALSE, glm::value_ptr(get_vp(camera, scene)));
     print_errors("after glUniformMatrix4fv");
+    
+    glActiveTexture(GL_TEXTURE0);
+    print_errors("after glActiveTexture");
+    glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
+    print_errors("after glBindTexture");
     
     glDrawElements(GL_TRIANGLES, 3*vbo.num_triangles, GL_UNSIGNED_INT, 0);
     print_errors("after drawElements mesh");
@@ -449,6 +513,16 @@ void drawRectVBO()
     
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rectVBO.buffers[1]);
     
+    glActiveTexture(GL_TEXTURE0);
+    print_errors("after glActiveTexture");
+    glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseID);
+    print_errors("after glBindTexture");
+    
+    glActiveTexture(GL_TEXTURE3);
+    print_errors("after glActiveTexture");
+    glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseTexID);
+    print_errors("after glBindTexture");
+    
     glDrawElements(GL_TRIANGLES, rectVBO.num_triangles*3, GL_UNSIGNED_INT, 0);
     print_errors("after drawElements rect");
     
@@ -463,6 +537,9 @@ void Renderer::render( const Camera& camera, const Scene& scene )
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
+    
+    GLuint attachments[5] = {GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1, GL_COLOR_ATTACHMENT2, GL_COLOR_ATTACHMENT3, GL_COLOR_ATTACHMENT4};
+    glDrawBuffers(5, attachments);
     
     for (unsigned int i = 0; i < scene.models.size(); i++)
     {

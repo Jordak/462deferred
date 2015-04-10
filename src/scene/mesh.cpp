@@ -65,11 +65,11 @@ bool Mesh::load(const ObjModel* model)
             
             if (material.map_Kd >= 0)
             {
-                diffuseImg = &(model->get_textures()[material.map_Kd]);
+                diffuseImg = &(model->get_textures()[material.map_Kd-1]);
             }
             if (material.map_Ka >= 0)
             {
-                ambientImg = &(model->get_textures()[material.map_Ka]);
+                ambientImg = &(model->get_textures()[material.map_Ka-1]);
             }
             
 			triangles.push_back(m_triangle);

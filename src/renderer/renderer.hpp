@@ -10,9 +10,16 @@ public:
 
     struct VBO
     {
-        GLuint buffers[4];
+        GLuint buffers[2];
         GLuint prog;
         GLuint num_triangles;
+        
+        glm::vec3 diffuse;
+        glm::vec3 ambient;
+        glm::vec3 specular;
+        
+        GLuint diffuseTex;
+        GLuint ambientTex;
     };
     
     struct GBuffer

@@ -1,10 +1,11 @@
 #version 330
 
 uniform sampler2D diffuse;
+uniform sampler2D diffuseTex;
 uniform float screenWidth;
 uniform float screenHeight;
 
-out vec4 outputF;
+out vec4 finalColor;
 
 void main()
 {
@@ -12,6 +13,9 @@ void main()
     float y = gl_FragCoord.y / screenHeight;
     vec2 uv = vec2(x,y);
     
-    outputF = vec4(texture(diffuse, uv).xyz, 1.0);
+    vec3 diffuseColor = texture(diffuse, uv).xyz;
+    vec3 diffuseTexColor = texture(diffuseTex, uv).xyz;
+    
+    finalColor = vec4(diffuseColor*diffuseTexColor, 1.0);
 }
 

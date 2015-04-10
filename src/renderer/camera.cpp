@@ -6,6 +6,7 @@
 #include <SFML/window.hpp>
 
 float rotation_speed = 1.0f;
+float translation_speed = 1.0f;
 
 Camera::Camera() : eye_pos( glm::vec3( 0.0f, 0.0f, 0.0f ) ),
 				   view_dir( glm::vec3( 0.0f, 0.0f, -1.0f ) ),
@@ -34,30 +35,30 @@ void Camera::handleInput( float deltaTime )
 	// use sf::Keyboard::isKeyPressed( sf::Keyboard::A ) to check if 'a' is currently pressed, etc
 	if (sf::Keyboard::isKeyPressed( sf::Keyboard::W ))
 	{
-		eye_pos = eye_pos + (deltaTime*view_dir);
+		eye_pos = eye_pos + (translation_speed*deltaTime*view_dir);
 	}
 	if (sf::Keyboard::isKeyPressed( sf::Keyboard::A ))
 	{
 		glm::vec3 move_dir = glm::cross(up_dir, view_dir);
-		eye_pos = eye_pos + (deltaTime*move_dir);
+		eye_pos = eye_pos + (translation_speed*deltaTime*move_dir);
 	}
 	if (sf::Keyboard::isKeyPressed( sf::Keyboard::S ))
 	{
-		eye_pos = eye_pos - (deltaTime*view_dir);
+		eye_pos = eye_pos - (translation_speed*deltaTime*view_dir);
 	}
 	if (sf::Keyboard::isKeyPressed( sf::Keyboard::D ))
 	{
 		glm::vec3 move_dir = glm::cross(view_dir, up_dir);
-		eye_pos = eye_pos + (deltaTime*move_dir);
+		eye_pos = eye_pos + (translation_speed*deltaTime*move_dir);
 	}
 	
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::E ))
     {
-        eye_pos = eye_pos + deltaTime*up_dir;
+        eye_pos = eye_pos + translation_speed*deltaTime*up_dir;
     }
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::Q ))
     {
-        eye_pos = eye_pos - deltaTime*up_dir;
+        eye_pos = eye_pos - translation_speed*deltaTime*up_dir;
     }
     
     if (sf::Keyboard::isKeyPressed( sf::Keyboard::Up ))
