@@ -29,6 +29,8 @@ public:
         GLuint specularID;
         GLuint diffuseTexID;
         GLuint ambientTexID;
+        GLuint positionID;
+        GLuint normalID;
         GLuint depthID;
     };
     

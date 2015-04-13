@@ -74,6 +74,7 @@ public:
 	Scene();
     bool loadFromFile( std::string filename );
     std::vector<StaticModel> models;
+    DirectionalLight get_sunlight() const;
     glm::mat4 get_model_matrix(unsigned int i) const;
 	~Scene();
 };

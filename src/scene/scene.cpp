@@ -23,6 +23,7 @@ Scene::Scene()
 
 bool Scene::loadFromFile( std::string filename )
 {
+	std::cout << "scene load start" << std::endl;
 	std::string path;
 	size_t pathlen = filename.find_last_of( "\\/", filename.npos );
 	if ( pathlen < filename.npos )
@@ -260,6 +261,8 @@ bool Scene::loadFromFile( std::string filename )
 		return false;
 	}
 
+
+	std::cout << "scene load end" << std::endl;
 	return true;
 }
 
@@ -300,4 +303,9 @@ glm::mat4 calculate_model_matrix(Scene::StaticModel model)
 glm::mat4 Scene::get_model_matrix(unsigned int i) const
 {
     return models[i].model_matrix;
+}
+
+Scene::DirectionalLight Scene::get_sunlight() const
+{
+	return sunlight;
 }

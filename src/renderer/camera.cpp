@@ -5,10 +5,11 @@
 #include <glm/gtx/rotate_vector.hpp>
 #include <SFML/window.hpp>
 
+float original_translation_speed = 1.0f;
 float rotation_speed = 1.0f;
 float translation_speed = 1.0f;
 
-Camera::Camera() : eye_pos( glm::vec3( 0.0f, 0.0f, 0.0f ) ),
+Camera::Camera() : eye_pos( glm::vec3( 0.0f, 1.0f, 5.0f ) ),
 				   view_dir( glm::vec3( 0.0f, 0.0f, -1.0f ) ),
 				   up_dir( glm::vec3( 0.0f, 1.0f, 0.0f ) ),
 				   proj_mat( glm::perspective( 45.0f, 1.25f, 0.1f, 1000.0f ) )
@@ -33,6 +34,15 @@ void Camera::handleInput( float deltaTime )
 {
 	// adjust the camera position and orientation to account for movement over deltaTime seconds
 	// use sf::Keyboard::isKeyPressed( sf::Keyboard::A ) to check if 'a' is currently pressed, etc
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::LShift))
+    {
+        translation_speed = 2*original_translation_speed;
+    }
+    else
+    {
+        translation_speed = original_translation_speed;
+    }
+
 	if (sf::Keyboard::isKeyPressed( sf::Keyboard::W ))
 	{
 		eye_pos = eye_pos + (translation_speed*deltaTime*view_dir);

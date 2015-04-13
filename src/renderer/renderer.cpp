@@ -18,6 +18,8 @@ const char* fs_cubegeo_file = "src/shaders/cubegeo.frag";
 const char* fs_depth_file = "src/shaders/depth.frag";
 const char* fs_dirlight_file = "src/shaders/dirlight.frag";
 
+Scene::DirectionalLight sunlight;
+
 Renderer::GBuffer gBuffer;
 
 GLuint vs_passthrough;
@@ -39,6 +41,51 @@ GLuint rectIndices[6] = {0, 1, 2, 0, 2, 3};
 
 char* textFileRead(const char* fn);
 void print_errors(std::string message);
+
+bool approx(float A, float B)
+{
+    float epsilon = .00000001;
+    float diff = A-B;
+    return (diff < epsilon) && (-diff < epsilon);
+}
+
+bool isCube(const Mesh* mesh)
+{
+    return false;
+    if (mesh->num_vertices() != 8 || mesh->num_triangles() != 12)
+    {
+        return false;
+    }
+
+    float smallest = 0.0f;
+    for (unsigned int i = 0; i < mesh->num_vertices(); i++)
+    {
+        for (unsigned int j = i+1; j < mesh->num_vertices(); j++)
+        {
+            glm::vec3 diff = mesh->get_vertices()[i].position - mesh->get_vertices()[j].position;
+            float dist = glm::length(diff);
+            if (smallest == 0.0f || dist < smallest)
+            {
+                smallest = dist;
+            }
+        }
+    }
+
+    for (unsigned int i = 0; i < mesh->num_vertices(); i++)
+    {
+        for (unsigned int j = i+1; j < mesh->num_vertices(); j++)
+        {
+            glm::vec3 diff = mesh->get_vertices()[i].position - mesh->get_vertices()[j].position;
+            float dist = glm::length(diff)/smallest;
+            if (!approx(dist, 1.0f) && !approx(dist, sqrt(2.0f)) && !approx(dist, sqrt(3.0f)))
+            {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
 
 GLuint createDepthTexture()
 {
@@ -119,6 +166,7 @@ GLuint createTextureFromImage(const sf::Image* image)
         image->getSize().x > GL_MAX_TEXTURE_SIZE || image->getSize().y > GL_MAX_TEXTURE_SIZE)
     {
         std::cout << "empty" << std::endl;
+        std::cout << image->getSize().x << ", " << image->getSize().y << std::endl;
         return 0;
     }
     
@@ -194,6 +242,8 @@ Renderer::GBuffer prepareGBuffer()
     gBuffer.specularID = createRGBTexture();
     gBuffer.diffuseTexID = createRGBTexture();
     gBuffer.ambientTexID = createRGBTexture();
+    gBuffer.positionID = createRGBTexture();
+    gBuffer.normalID = createRGBTexture();
     gBuffer.depthID = createDepthTexture();
     
     return gBuffer;
@@ -201,16 +251,25 @@ Renderer::GBuffer prepareGBuffer()
 
 GLuint prepare_G_FBO(Renderer::GBuffer gBuffer)
 {
+    print_errors("begin prepare_G_FBO");
     GLuint fbo;
     glGenFramebuffers(1, &fbo);
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, fbo);
+
+    int res;
+    glGetIntegerv(GL_MAX_COLOR_ATTACHMENTS, &res);
+    std::cout << res << std::endl;
     
+    print_errors("before glFramebufferTexture2D");
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, gBuffer.diffuseID, 0);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT1, GL_TEXTURE_2D, gBuffer.ambientID, 0);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT2, GL_TEXTURE_2D, gBuffer.specularID, 0);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT3, GL_TEXTURE_2D, gBuffer.diffuseTexID, 0);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT4, GL_TEXTURE_2D, gBuffer.ambientTexID, 0);
+    glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT5, GL_TEXTURE_2D, gBuffer.positionID, 0);
+    glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT6, GL_TEXTURE_2D, gBuffer.normalID, 0);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, gBuffer.depthID, 0);
+    print_errors("after glFramebufferTexture2D");
     
     {
     GLenum e = glCheckFramebufferStatus(GL_DRAW_FRAMEBUFFER);
@@ -246,11 +305,14 @@ GLuint prepare_G_FBO(Renderer::GBuffer gBuffer)
     
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
     
+    print_errors("end prepare_G_FBO");
+
     return fbo;
 }
 
 GLuint initShader(const char* file_name, GLenum shader_type)
 {
+    print_errors("begin initShader");
     GLuint handler = glCreateShader(shader_type);
     char* src = textFileRead(file_name);
     const char* source = src;
@@ -285,6 +347,7 @@ GLuint initShader(const char* file_name, GLenum shader_type)
         
     }
     
+    print_errors("end initShader");
     return handler;
 }
 
@@ -300,11 +363,17 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     glBindBuffer(GL_ARRAY_BUFFER, vbo.buffers[0]); // the array buffer from now on is buffers[0]
     glBufferData(GL_ARRAY_BUFFER, sizeof(MeshVertex)*mesh->num_vertices(), mesh->get_vertices(), GL_STATIC_DRAW);
     
+    //vertex position
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)0);
 
+    //vertex normal
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_TRUE, sizeof(MeshVertex), (void*)(sizeof(glm::vec3)));
+
+    //vertex texture coordinates
     glEnableVertexAttribArray(2);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_TRUE, sizeof(MeshVertex), (void*)(2*sizeof(glm::vec3)));
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)(2*sizeof(glm::vec3)));
     
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo.buffers[1]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(MeshTriangle)*mesh->num_triangles(), mesh->get_triangles(), GL_STATIC_DRAW);
@@ -313,21 +382,11 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     vbo.prog = glCreateProgram();
     
     glAttachShader(vbo.prog, vs_standard);
-
-    if (i == 0)
-    {
-        print_errors("before attach fs_cubegeo");
-        glAttachShader(vbo.prog, fs_cubegeo);
-        print_errors("after attach fs_cubegeo");
-    }
-    else
-    {
-        std::cout << vbo.num_triangles << std::endl;
-        glAttachShader(vbo.prog, fs_geometry);
-    }
+    glAttachShader(vbo.prog, fs_geometry);
     
     print_errors("before attrib binds");
     glBindAttribLocation(vbo.prog, 0, "vertexPosition");
+    glBindAttribLocation(vbo.prog, 1, "vertexNormal");
     glBindAttribLocation(vbo.prog, 2, "vertexTexCoord");
     print_errors("after attrib binds");
     
@@ -357,40 +416,17 @@ Renderer::VBO prepareMeshVBO(const Scene& scene, unsigned int i)
     vbo.diffuse = mesh->diffuse;
     vbo.ambient = mesh->ambient;
     vbo.specular = mesh->specular;
-    if (i == 0)
-    {
-        print_errors("before cubemap call");
-        vbo.diffuseTex = createCubemapFromImage(mesh->diffuseImg);
-        std::cout << "HERE" << std::endl;
-        vbo.ambientTex = createCubemapFromImage(mesh->ambientImg);
-    }
-    else
-    {
-        vbo.diffuseTex = createTextureFromImage(mesh->diffuseImg);
-        vbo.ambientTex = createTextureFromImage(mesh->ambientImg);
-    }
+
+    vbo.diffuseTex = createTextureFromImage(mesh->diffuseImg);
+    vbo.ambientTex = createTextureFromImage(mesh->ambientImg);
     
     glUseProgram(vbo.prog);
     
-    print_errors("before glUniform");
     glUniform3fv(glGetUniformLocation(vbo.prog, "diffuseU"), 1, glm::value_ptr(vbo.diffuse));
-    print_errors("after glUniform");
-    
-    glActiveTexture(GL_TEXTURE0);
-    print_errors("after glActiveTexture");
-    if (i == 0)
-    {
-        glBindTexture(GL_TEXTURE_CUBE_MAP, vbo.diffuseTex);
-    }
-    else
-    {
-        glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
-    }
-    print_errors("after glBindTexture");
-
+    glUniform3fv(glGetUniformLocation(vbo.prog, "ambientU"), 1, glm::value_ptr(vbo.ambient));
+    glUniform3fv(glGetUniformLocation(vbo.prog, "specularU"), 1, glm::value_ptr(vbo.specular));
     glUniform1i(glGetUniformLocation(vbo.prog, "diffuseTexU"), 0);
-    
-
+    glUniform1i(glGetUniformLocation(vbo.prog, "ambientTexU"), 1);
     
     glUseProgram(0);
     
@@ -447,31 +483,41 @@ Renderer::VBO prepareRectVBO()
     
     glUseProgram(vbo.prog);
     
-    glUniform1i(glGetUniformLocation(vbo.prog, "diffuse"), 0);
-    glUniform1i(glGetUniformLocation(vbo.prog, "diffuseTex"), 3);
-    
-    glActiveTexture(GL_TEXTURE0);
-    print_errors("after glActiveTexture");
-    glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseID);
-    print_errors("after glBindTexture");
-    
-    glActiveTexture(GL_TEXTURE3);
-    print_errors("after glActiveTexture");
-    glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseTexID);
-    print_errors("after glBindTexture");
-    
     glUniform1f(glGetUniformLocation(vbo.prog, "screenWidth"), wf);
     glUniform1f(glGetUniformLocation(vbo.prog, "screenHeight"), hf);
+
+    glUniform3fv(glGetUniformLocation(vbo.prog, "lightDir"), 1, glm::value_ptr(sunlight.direction));
+    glUniform3fv(glGetUniformLocation(vbo.prog, "lightColor"), 1, glm::value_ptr(sunlight.color));
+    glUniform1f(glGetUniformLocation(vbo.prog, "lightAmbient"), sunlight.ambient);
+
+    glUniform1i(glGetUniformLocation(vbo.prog, "diffuse"), 0);
+    glUniform1i(glGetUniformLocation(vbo.prog, "ambient"), 1);
+    glUniform1i(glGetUniformLocation(vbo.prog, "specular"), 2);
+    glUniform1i(glGetUniformLocation(vbo.prog, "diffuseTex"), 3);
+    glUniform1i(glGetUniformLocation(vbo.prog, "ambientTex"), 4);
+    glUniform1i(glGetUniformLocation(vbo.prog, "position"), 5);
+    glUniform1i(glGetUniformLocation(vbo.prog, "normal"), 6);
     
-    /*
     glActiveTexture(GL_TEXTURE0);
-    print_errors("after glActiveTexture");
-    glBindTexture(GL_TEXTURE_2D, depthTex);
-    print_errors("after glBindTexture");
+    glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseID);
+
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.ambientID);
+
+    glActiveTexture(GL_TEXTURE2);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.specularID);
     
-    glUniform1i(glGetUniformLocation(vbo.prog, "depth"), 0);
-    print_errors("after glUniform");
-     */
+    glActiveTexture(GL_TEXTURE3);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseTexID);
+
+    glActiveTexture(GL_TEXTURE4);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.ambientTexID);
+
+    glActiveTexture(GL_TEXTURE5);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.positionID);
+
+    glActiveTexture(GL_TEXTURE6);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.normalID);
     
     glUseProgram(0);
     
@@ -485,6 +531,8 @@ bool Renderer::initialize( const Camera& camera, const Scene& scene )
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+
+    sunlight = scene.get_sunlight();
     
     GLint m_viewport[4];
     glGetIntegerv(GL_VIEWPORT, m_viewport);
@@ -532,13 +580,6 @@ void print_matrix(glm::mat4 matrix)
     std::cout << "\n" << std::endl;
 }
 
-glm::mat4 get_vp(const Camera& camera, const Scene& scene)
-{
-    glm::mat4 view = camera.getViewMatrix();
-    glm::mat4 proj = camera.getProjectionMatrix();
-    return proj*view;
-}
-
 void drawMeshVBO(const Camera& camera, const Scene& scene, unsigned int i)
 {
     Renderer::VBO vbo = meshVBOs[i];
@@ -549,30 +590,34 @@ void drawMeshVBO(const Camera& camera, const Scene& scene, unsigned int i)
     
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)0);
+
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_TRUE, sizeof(MeshVertex), (void*)(sizeof(glm::vec3)));
     
     glEnableVertexAttribArray(2);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_TRUE, sizeof(MeshVertex), (void*)(2*sizeof(glm::vec3)));
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(MeshVertex), (void*)(2*sizeof(glm::vec3)));
     
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vbo.buffers[1]);
     
+    glm::mat4 modelMatrix = scene.get_model_matrix(i);
+    glm::mat4 viewMatrix = camera.getViewMatrix();
+    glm::mat4 projectionMatrix = camera.getProjectionMatrix();
+    glm::mat4 normalMatrix = glm::transpose(glm::inverse(modelMatrix));
+
     GLuint mMat = glGetUniformLocation(vbo.prog, "modelMatrix");
-    print_errors("after glGetUniformLocation");
-    glUniformMatrix4fv(mMat, 1, GL_FALSE, glm::value_ptr(scene.get_model_matrix(i)));
-    print_errors("after glUniformMatrix4fv");
+    glUniformMatrix4fv(mMat, 1, GL_FALSE, glm::value_ptr(modelMatrix));
+
+    GLuint nMat = glGetUniformLocation(vbo.prog, "normalMatrix");
+    glUniformMatrix4fv(nMat, 1, GL_FALSE, glm::value_ptr(normalMatrix));
     
     GLuint vpMat = glGetUniformLocation(vbo.prog, "viewProjectionMatrix");
-    print_errors("after glGetUniformLocation");
-    glUniformMatrix4fv(vpMat, 1, GL_FALSE, glm::value_ptr(get_vp(camera, scene)));
-    print_errors("after glUniformMatrix4fv");
+    glUniformMatrix4fv(vpMat, 1, GL_FALSE, glm::value_ptr(projectionMatrix * viewMatrix));
     
-    if (i == 0)
-    {
-        glBindTexture(GL_TEXTURE_CUBE_MAP, vbo.diffuseTex);
-    }
-    else
-    {
-        glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
-    }
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, vbo.diffuseTex);
+
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, vbo.ambientTex);
     
     glDrawElements(GL_TRIANGLES, 3*vbo.num_triangles, GL_UNSIGNED_INT, 0);
     print_errors("after drawElements mesh");
@@ -591,14 +636,25 @@ void drawRectVBO()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rectVBO.buffers[1]);
     
     glActiveTexture(GL_TEXTURE0);
-    print_errors("after glActiveTexture");
     glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseID);
-    print_errors("after glBindTexture");
+
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.ambientID);
+
+    glActiveTexture(GL_TEXTURE2);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.specularID);
     
     glActiveTexture(GL_TEXTURE3);
-    print_errors("after glActiveTexture");
     glBindTexture(GL_TEXTURE_2D, gBuffer.diffuseTexID);
-    print_errors("after glBindTexture");
+
+    glActiveTexture(GL_TEXTURE4);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.ambientTexID);
+
+    glActiveTexture(GL_TEXTURE5);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.positionID);
+
+    glActiveTexture(GL_TEXTURE6);
+    glBindTexture(GL_TEXTURE_2D, gBuffer.normalID);
     
     glDrawElements(GL_TRIANGLES, rectVBO.num_triangles*3, GL_UNSIGNED_INT, 0);
     print_errors("after drawElements rect");
@@ -615,8 +671,9 @@ void Renderer::render( const Camera& camera, const Scene& scene )
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
     
-    GLuint attachments[5] = {GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1, GL_COLOR_ATTACHMENT2, GL_COLOR_ATTACHMENT3, GL_COLOR_ATTACHMENT4};
-    glDrawBuffers(5, attachments);
+    GLuint attachments[7] = {GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1, GL_COLOR_ATTACHMENT2, GL_COLOR_ATTACHMENT3,
+                             GL_COLOR_ATTACHMENT4, GL_COLOR_ATTACHMENT5, GL_COLOR_ATTACHMENT6};
+    glDrawBuffers(7, attachments);
     
     for (unsigned int i = 0; i < scene.models.size(); i++)
     {
@@ -624,13 +681,9 @@ void Renderer::render( const Camera& camera, const Scene& scene )
     }
     
     glDisable(GL_DEPTH_TEST);
-    print_errors("after glDisable(GL_DEPTH_TEST)");
-    
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    print_errors("after glClear");
-    
+
     drawRectVBO();
 }
 

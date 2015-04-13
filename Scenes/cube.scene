@@ -1,7 +1,7 @@
 model
 {
 	file "models/cube2.obj"
-	position 0 1.732 0
+	position 0 1.7320508 0
 	orientation 45 45 0
 }
 
